@@ -1,11 +1,25 @@
+{pkgs, ...}:
+
 {
   programs = {
-    home-manager.enable = true;
     bash.enable = true;
-    fish.enable = true;
-    starship.enable = true;
     bat.enable = true;
     ssh.enable = true;
+
+    mako = {
+      enable = true;
+      defaultTimeout = 1000 * 5;
+      anchor = "bottom-right";
+    };
+
+    rofi = {
+      enable = true;
+    };
+
+    vscode = {
+      enable = true;
+      package = pkgs.vscodium;
+    };
 
     git = {
       enable = true;
@@ -27,11 +41,15 @@
 
     direnv = {
       enable = true;
-      # enableNixDirenvIntegration = true;
+      enableNixDirenvIntegration = true;
     };
 
     firefox = {
       enable = true;
+      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+        stylus
+        bitwarden
+      ];
 
       profiles.Rosario = {
         id = 0;

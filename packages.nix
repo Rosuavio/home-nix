@@ -1,47 +1,47 @@
-pkgs:
-with pkgs; [
-  nix
-  gitAndTools.gh
+{pkgs, ... }:
+{
+  home.packages = with pkgs; [
+    nix
+    gitAndTools.gh
 
-  watchman
-  inotify-tools
+    swaylock
+    swayidle
+    wl-clipboard
+    alacritty
+    dmenu
+    slurp
+    grim
 
-  kdeApplications.filelight
-  kdeApplications.gwenview
-  kdeApplications.kate
-  kdeApplications.ark
-  kdeApplications.dragon
-  kdeApplications.okular
-  kdeApplications.spectacle
+    watchman
+    inotify-tools
 
-  hunspell
-  hunspellDicts.en-us
-  vscodium
-  teams
+    hunspell
+    hunspellDicts.en-us
+    teams
 
-  yubikey-manager
-  yubikey-manager-qt
-  yubikey-personalization
-  yubikey-personalization-gui
+    yubikey-manager
+    yubikey-manager-qt
+    yubikey-personalization
+    yubikey-personalization-gui
 
-  rnix-lsp
+    rnix-lsp
 
-  # needed so that coc can work https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#requirements
-  nodejs
+    # needed so that coc can work https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#requirements
+    nodejs
 
-  unzip
+    unzip
 
-  spotify
-  bitwarden
-  krita
-  inkscape
-  libreoffice
-  exercism
-  haskellPackages.cabal-install
-  haskellPackages.ghc
+    spotify
+    bitwarden
+    inkscape
+    libreoffice
+    exercism
+    haskellPackages.cabal-install
+    haskellPackages.ghc
 
-  skype
-  discord
-  signal-desktop
-  gitter
-]
+    skype
+    discord
+    signal-desktop
+    gitter
+  ];
+}
