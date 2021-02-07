@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     nix
     gitAndTools.gh
+    gitAndTools.hub
 
     swaylock
     swayidle

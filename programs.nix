@@ -12,6 +12,11 @@
       anchor = "bottom-right";
     };
 
+    kakoune = {
+      enable = true;
+      plugins = [ pkgs.kakounePlugins.kak-fzf ];
+    };
+
     rofi = {
       enable = true;
     };
@@ -56,6 +61,11 @@
         id = 0;
         isDefault = true;
       };
+    };
+
+    chromium = {
+      enable = true;
+      package = pkgs.brave;
     };
   };
 }
