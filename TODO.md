@@ -1,11 +1,12 @@
 # To Do
 My config is getting there but there is always work to do
 
-# Brightness
+## Brightness/Volume
 human scalling.
 
-# Volume
-human scalling?
+## kakoune
+https://github.com/mawww/kakoune
+
 
 # rofi
 use that shit.
