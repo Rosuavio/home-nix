@@ -3,9 +3,3 @@ set list
 
 set hidden
 set number
-
-:packadd vim-nix
-
-let g:LanguageClient_serverCommands = {
-  \ 'nix': ['rnix-lsp']
-\ }
