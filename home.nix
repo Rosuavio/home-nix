@@ -12,6 +12,7 @@ in
     ./programs.nix
     ./packages.nix
     ./sway.nix
+    ./kakoune.nix
   ];
 
   home = {

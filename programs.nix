@@ -12,11 +12,6 @@
       anchor = "bottom-right";
     };
 
-    kakoune = {
-      enable = true;
-      plugins = [ pkgs.kakounePlugins.kak-fzf ];
-    };
-
     rofi = {
       enable = true;
     };
