@@ -2,6 +2,7 @@
 let
   cfg = config.wayland.windowManager.sway;
   pamixer = "${pkgs.pamixer}/bin/pamixer";
+  pactl = "${pkgs.pulseaudio}/bin/pactl";
   bctl = "${pkgs.brightnessctl}/bin/brightnessctl";
   light = "${pkgs.light}/bin/light";
   swaylock = "${pkgs.swaylock}/bin/swaylock";
@@ -107,6 +108,7 @@ in
         XF86AudioLowerVolume = "exec ${pamixer} -ud 2 && ${pamixer} --get-volume > $SWAYSOCK.wob";
         XF86AudioMute = "exec ${pamixer} --toggle-mute && ( ${pamixer} --get-mute && echo 0 > $SWAYSOCK.wob ) || ${pamixer} --get-volume > $SWAYSOCK.wob";
         # If no pactl then fallback to alsa
+        XF86AudioMicMute = "exec ${pactl} set-source-mute 1 toggle";
       };
       ## Might want to find a new menu
       #menu = "${pkgs.rofi}/bin/rofi";
