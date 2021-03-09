@@ -4,6 +4,7 @@ let
   pamixer = "${pkgs.pamixer}/bin/pamixer";
   bctl = "${pkgs.brightnessctl}/bin/brightnessctl";
   light = "${pkgs.light}/bin/light";
+  swaylock = "${pkgs.swaylock}/bin/swaylock";
 in
 {
   config.wayland.windowManager.sway = {
@@ -96,6 +97,7 @@ in
         "exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'";
 
         "${cfg.config.modifier}+r" = "mode resize";
+        "${cfg.config.modifier}+ctrl+l" = "exec ${swaylock}";
 
         XF86MonBrightnessDown = "exec ${bctl} -q set 5%- && ${light} -G | cut -d'.' -f1 > $SWAYSOCK.wob";
         XF86MonBrightnessUp   = "exec ${bctl} -q set +5% && ${light} -G | cut -d'.' -f1 > $SWAYSOCK.wob";
