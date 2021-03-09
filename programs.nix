@@ -46,10 +46,13 @@
 
     firefox = {
       enable = true;
-      package = pkgs.firefox-wayland;
+      profiles.Rosario = {
+      };
+
       extensions = with pkgs.nur.repos.rycee.firefox-addons; [
         stylus
         bitwarden
+        ipfs-companion
       ];
 
       profiles.Rosario = {
