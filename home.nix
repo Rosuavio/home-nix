@@ -1,6 +1,6 @@
 { pkgs, config, ... }:
 let
-  editor = "nvim";
+  editor = "kak";
   username = "rosario";
 in
 {
