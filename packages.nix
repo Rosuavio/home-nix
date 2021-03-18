@@ -44,5 +44,7 @@
     discord
     signal-desktop
     gitter
+
+    radicle-upstream
   ];
 }
