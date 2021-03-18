@@ -37,8 +37,6 @@
     inkscape
     libreoffice
     exercism
-    haskellPackages.cabal-install
-    haskellPackages.ghc
 
     skype
     discord
