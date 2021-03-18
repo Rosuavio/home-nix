@@ -1,6 +1,10 @@
 {pkgs, ...}:
 
 {
+  imports = [
+    ./firefox/firefox.nix
+  ];
+
   programs = {
     bash.enable = true;
     bat.enable = true;
@@ -42,23 +46,6 @@
     direnv = {
       enable = true;
       enableNixDirenvIntegration = true;
-    };
-
-    firefox = {
-      enable = true;
-      profiles.Rosario = {
-      };
-
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-        stylus
-        bitwarden
-        ipfs-companion
-      ];
-
-      profiles.Rosario = {
-        id = 0;
-        isDefault = true;
-      };
     };
 
     chromium = {
