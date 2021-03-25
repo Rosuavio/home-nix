@@ -19,6 +19,9 @@
     hunspell
     hunspellDicts.en-us
     teams
+    okular
+
+    zoom-us
 
     yubikey-manager
     yubikey-manager-qt
