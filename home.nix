@@ -29,6 +29,4 @@ in
 
     language.base = "en_US";
   };
-
-  services.gpg-agent.enable = true;
 }
