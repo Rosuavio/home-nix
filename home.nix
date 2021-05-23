@@ -8,7 +8,6 @@ in
     ./vim
     ./gpg.nix
     ./xdg.nix
-    ./services.nix
     ./programs.nix
     ./packages.nix
     # ./sway.nix
@@ -30,4 +29,6 @@ in
 
     language.base = "en_US";
   };
+
+  services.gpg-agent.enable = true;
 }
