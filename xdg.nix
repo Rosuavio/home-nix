@@ -13,7 +13,6 @@ in
       enable = true;
 
       defaultApplications = {
-        "x-scheme-handler/msteams"   = [ "teams.desktop"         ];
         "x-scheme-handler/bitwarden" = [ "Bitwarden.desktop"     ];
         "text/html"                  = [ browser ];
         "x-scheme-handler/http"      = [ browser ];

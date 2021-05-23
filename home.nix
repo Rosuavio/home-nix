@@ -15,6 +15,7 @@ in
     ./yubikey.nix
     ./firefox/firefox.nix
     ./git.nix
+    ./messaging.nix
   ];
 
   home = {
@@ -40,10 +41,7 @@ in
 
     hunspell
     hunspellDicts.en-us
-    teams
     okular
-
-    zoom-us
 
     rnix-lsp
 
@@ -55,11 +53,6 @@ in
     inkscape
     libreoffice
     exercism
-
-    skype
-    discord
-    signal-desktop
-    gitter
   ];
 
   programs = {
