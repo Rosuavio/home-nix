@@ -20,6 +20,10 @@ in
     profiles.Rosario = {
       id = 0;
       isDefault = true;
+
+      settings = {
+          "browser.startup.homepage"= "https://nixos.org";
+      };
     };
 
     # extensions = builtins.map  { inherit buildFirefoxXpiAddon; };
