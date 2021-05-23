@@ -15,6 +15,7 @@ in
     ./kakoune.nix
     ./plasma.nix
     ./archive.nix
+    ./yubikey.nix
   ];
 
   home = {
@@ -29,8 +30,4 @@ in
 
     language.base = "en_US";
   };
-
-  home.file.".gnupg/scdeamon.conf".text = ''
-    reader-port Yubico Yubi
-  '';
 }
