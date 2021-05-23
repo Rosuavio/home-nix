@@ -17,8 +17,6 @@ in
     # from nixpkgs there seems to be a way that ff can be built with more wayland stuff and pipwire stuff
     # if its enbled in nixos system config. Home manager cannot see what nixos is configured like so I need a way
     # to detect and if wayland and pipewire are avaible and flip the right build switches for home-manager ff.
-    package = pkgs.firefox-wayland;
-
     profiles.Rosario = {
       id = 0;
       isDefault = true;

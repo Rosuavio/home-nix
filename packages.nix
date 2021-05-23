@@ -5,13 +5,7 @@
     gitAndTools.gh
     gitAndTools.hub
 
-    swaylock
-    swayidle
-    wl-clipboard
     alacritty
-    dmenu
-    slurp
-    grim
 
     watchman
     inotify-tools

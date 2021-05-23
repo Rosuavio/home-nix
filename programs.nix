@@ -10,16 +10,6 @@
     bat.enable = true;
     ssh.enable = true;
 
-    mako = {
-      enable = true;
-      defaultTimeout = 1000 * 5;
-      anchor = "bottom-right";
-    };
-
-    rofi = {
-      enable = true;
-    };
-
     vscode = {
       enable = true;
       package = pkgs.vscodium;

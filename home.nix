@@ -11,8 +11,9 @@ in
     ./services.nix
     ./programs.nix
     ./packages.nix
-    ./sway.nix
+    # ./sway.nix
     ./kakoune.nix
+    ./plasma.nix
   ];
 
   home = {
