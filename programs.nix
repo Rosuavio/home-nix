@@ -33,11 +33,6 @@
       };
     };
 
-    direnv = {
-      enable = true;
-      enableNixDirenvIntegration = true;
-    };
-
     chromium = {
       enable = true;
       package = pkgs.brave;
