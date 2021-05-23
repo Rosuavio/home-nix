@@ -14,6 +14,7 @@ in
     # ./sway.nix
     ./kakoune.nix
     ./plasma.nix
+    ./archive.nix
   ];
 
   home = {

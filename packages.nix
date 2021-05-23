@@ -27,8 +27,6 @@
     # needed so that coc can work https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#requirements
     nodejs
 
-    unzip
-
     spotify
     bitwarden
     inkscape
