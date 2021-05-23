@@ -14,6 +14,7 @@ in
     ./archive.nix
     ./yubikey.nix
     ./firefox/firefox.nix
+    ./git.nix
   ];
 
   home = {
@@ -31,8 +32,6 @@ in
 
   home.packages = with pkgs; [
     nix
-    gitAndTools.gh
-    gitAndTools.hub
 
     alacritty
 
@@ -61,8 +60,6 @@ in
     discord
     signal-desktop
     gitter
-
-    radicle-upstream
   ];
 
   programs = {
@@ -73,24 +70,6 @@ in
     vscode = {
       enable = true;
       package = pkgs.vscodium;
-    };
-
-    git = {
-      enable = true;
-      userName = "Rosario Pulella";
-      userEmail = "RosarioPulella@gmail.com";
-
-      extraConfig = {
-        # core.editor = editor;
-        diff.tool = "vimdiff";
-        difftool.prompt = false;
-
-        mergetool.prompt = false;
-        merge = {
-          tool = "vimdiff";
-          conflictstyle = "diff3";
-        };
-      };
     };
 
     chromium = {
