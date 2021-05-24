@@ -7,7 +7,6 @@ in
   imports = [
     ./vim
     ./gpg.nix
-    ./xdg.nix
     # ./sway.nix
     ./kakoune.nix
     ./plasma.nix
@@ -30,6 +29,23 @@ in
 
     language.base = "en_US";
   };
+
+  xdg = {
+    enable = true;
+
+    userDirs.enable = true;
+
+    mime.enable = true;
+
+    mimeApps = {
+      enable = true;
+
+      defaultApplications = {
+        "x-scheme-handler/bitwarden" = [ "Bitwarden.desktop" ];
+      };
+    };
+  };
+
 
   home.packages = with pkgs; [
     nix

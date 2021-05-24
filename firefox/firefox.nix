@@ -7,6 +7,8 @@ let
   extensions = import ./addons.nix {
     inherit buildFirefoxXpiAddon lib;
   };
+
+  browser = "firefox";
 in
 {
   programs.firefox = {
@@ -27,5 +29,13 @@ in
     };
 
     # extensions = builtins.map  { inherit buildFirefoxXpiAddon; };
+  };
+
+  xdg.mimeApps.defaultApplications = {
+    "text/html"                  = [ browser ];
+    "x-scheme-handler/http"      = [ browser ];
+    "x-scheme-handler/https"     = [ browser ];
+    "x-scheme-handler/about"     = [ browser ];
+    "x-scheme-handler/unknown"   = [ browser ];
   };
 }
