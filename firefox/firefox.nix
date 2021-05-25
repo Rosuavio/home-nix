@@ -23,6 +23,7 @@ in
       id = 0;
       isDefault = true;
 
+      # WORKAROUND: This forces the profile folder to be created fix in https://github.com/nix-community/home-manager/pull/2035
       settings = {
           "browser.startup.homepage"= "https://nixos.org";
       };
