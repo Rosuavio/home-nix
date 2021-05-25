@@ -1,11 +1,10 @@
-{ lib, pkgs, fetchurl, stdenv, ... }:
+{ lib, pkgs, ... }:
 let
-  buildFirefoxXpiAddon = import ./buildFirefoxXpiAddon.nix {
-    inherit fetchurl stdenv;
-  };
+  addons = import addons/defualt.nix {
+    inherit lib;
 
-  extensions = import ./addons.nix {
-    inherit buildFirefoxXpiAddon lib;
+    fetchurl = pkgs.fetchurl;
+    stdenv = pkgs.stdenv;
   };
 
   browser = "firefox";
@@ -29,7 +28,16 @@ in
       };
     };
 
-    # extensions = builtins.map  { inherit buildFirefoxXpiAddon; };
+    # TODO: Map all attrs to a list.
+    extensions = [
+      addons.redux-devtools
+      addons.bitwarden
+      addons.noscript
+      addons.stylus
+      addons.react-devtools
+      addons.plasma-integration
+      addons.ipfs-companion
+    ];
   };
 
   xdg.mimeApps.defaultApplications = {

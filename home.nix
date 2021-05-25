@@ -2,6 +2,7 @@
 let
   editor = "kak";
   username = "rosario";
+
 in
 {
   imports = [
@@ -12,7 +13,7 @@ in
     ./plasma.nix
     ./archive.nix
     ./yubikey.nix
-    ./firefox/firefox.nix
+    ./firefox
     ./git.nix
     ./messaging.nix
   ];

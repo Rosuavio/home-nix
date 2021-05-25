@@ -34,5 +34,17 @@
         "type": "tarball",
         "url": "https://github.com/nixos/nixpkgs/archive/efee454783c5c14ae78687439077c1d3f0544d97.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nur-combined": {
+        "branch": "master",
+        "description": "A repository of NUR that combines all repositories [maintainer=@Mic92] ",
+        "homepage": "https://github.com/nix-community/NUR",
+        "owner": "nix-community",
+        "repo": "nur-combined",
+        "rev": "26f08444ff807f0ec67507a38517d7e43e8b9d12",
+        "sha256": "0dxva12gnz7wlcfp3zfbjhhvs1z9v8b91k7b5ka23jsf1sin3qbi",
+        "type": "tarball",
+        "url": "https://github.com/nix-community/nur-combined/archive/26f08444ff807f0ec67507a38517d7e43e8b9d12.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
