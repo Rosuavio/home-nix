@@ -72,6 +72,8 @@ in
     inkscape
     libreoffice
     exercism
+
+    element-desktop
   ];
 
   programs = {
