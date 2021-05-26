@@ -2,7 +2,7 @@
     "home-manager": {
         "branch": "master",
         "description": "Manage a user environment using Nix",
-        "homepage": "https://rycee.gitlab.io/home-manager/",
+        "homepage": "https://nix-community.github.io/home-manager/",
         "owner": "nix-community",
         "repo": "home-manager",
         "rev": "64607f58b75741470284c698f82f0199fcecdfa7",
