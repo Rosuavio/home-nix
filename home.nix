@@ -84,7 +84,24 @@ in
 
     vscode = {
       enable = true;
+
+      userSettings = {
+        "update.channel" = "none";
+
+        "editor.renderWhitespace" = "all";
+        "[nix]"."editor.tabSize" = 2;
+        
+        "diffEditor.ignoreTrimWhitespace" = false;
+      };
       package = pkgs.vscodium;
+
+      haskell = {
+        enable = true;
+        hie.enable = false;
+        # TODO: Enable hie integration
+      };
+
+      extensions = [ pkgs.vscode-extensions.jnoortheen.nix-ide ];
     };
 
     chromium = {
