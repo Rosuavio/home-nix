@@ -101,7 +101,10 @@ in
         # TODO: Enable hie integration
       };
 
-      extensions = [ pkgs.vscode-extensions.jnoortheen.nix-ide ];
+      extensions = with pkgs.vscode-extensions; [ 
+        jnoortheen.nix-ide 
+        streetsidesoftware.code-spell-checker
+      ];
     };
 
     chromium = {
