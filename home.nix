@@ -20,7 +20,7 @@ in
   home = {
     username = username;
     homeDirectory = "/home/" + username;
-    stateVersion = "20.09";
+    stateVersion = "21.05";
 
     sessionVariables = {
       EDITOR = editor;
