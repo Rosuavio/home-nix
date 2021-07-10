@@ -21,6 +21,8 @@
           tool = "vimdiff";
           conflictstyle = "diff3";
         };
+
+        init.defaultBranch = "main";
       };
     };
   };
