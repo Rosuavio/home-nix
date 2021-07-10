@@ -10,7 +10,6 @@ in
     ./gpg.nix
     # ./sway.nix
     ./kakoune.nix
-    ./plasma.nix
     ./archive.nix
     ./yubikey.nix
     ./firefox
@@ -31,8 +30,6 @@ in
     language.base = "en_US";
   };
 
-  # WORKAROUND: For kde's startup this is neaded to make sure we load some hm vars.
-  home.file.".xprofile".text = ''. "${config.home.profileDirectory}/etc/profile.d/hm-session-vars.sh"'';
 
   xdg = {
     enable = true;

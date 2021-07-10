@@ -21,8 +21,5 @@
     unrar
     unzip
     zip
-
-    # gui tools
-    ark
   ];
 }
