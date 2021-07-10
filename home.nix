@@ -90,7 +90,7 @@ in
 
         "editor.renderWhitespace" = "all";
         "[nix]"."editor.tabSize" = 2;
-        
+
         "diffEditor.ignoreTrimWhitespace" = false;
       };
       package = pkgs.vscodium;
@@ -101,8 +101,8 @@ in
         # TODO: Enable hie integration
       };
 
-      extensions = with pkgs.vscode-extensions; [ 
-        jnoortheen.nix-ide 
+      extensions = with pkgs.vscode-extensions; [
+        jnoortheen.nix-ide
         streetsidesoftware.code-spell-checker
       ];
     };
