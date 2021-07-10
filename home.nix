@@ -3,6 +3,11 @@ let
   editor = "kak";
   username = "rosario";
 
+  sources = import ./nix/sources.nix;
+
+  ihp-new = (import "${sources.ihp}/ProjectGenerator/default.nix" { inherit pkgs; });
+  obelisk = (import sources.obelisk {});
+
 in
 {
   imports = [
@@ -52,6 +57,10 @@ in
 
   home.packages = with pkgs; [
     nix
+
+    ihp-new
+
+    obelisk.command
 
     hack-font
 

@@ -11,6 +11,18 @@
         "url": "https://github.com/nix-community/home-manager/archive/35a24648d155843a4d162de98c17b1afd5db51e4.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "ihp": {
+        "branch": "master",
+        "description": "🔥 The fastest way to build type safe web apps. IHP is a new batteries-included web framework optimized for longterm productivity and programmer happiness",
+        "homepage": "https://ihp.digitallyinduced.com/",
+        "owner": "digitallyinduced",
+        "repo": "ihp",
+        "rev": "3ae7d16af382ed942466d088d0a745a79ea76287",
+        "sha256": "173jrz3zqp98nicfik3k1d4m4l12rmc87jxl4xcj3ycrpabp1kzx",
+        "type": "tarball",
+        "url": "https://github.com/digitallyinduced/ihp/archive/3ae7d16af382ed942466d088d0a745a79ea76287.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",
@@ -45,6 +57,18 @@
         "sha256": "11xw9wqac9h5jbpfprpbisc625cgrhb9w7vk6h7sywww283chyci",
         "type": "tarball",
         "url": "https://github.com/nix-community/nur-combined/archive/7d1d7c644950140afedad1c4dd4dde799ee22519.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "obelisk": {
+        "branch": "master",
+        "description": "Functional reactive web and mobile applications, with batteries included.",
+        "homepage": "https://reflex-frp.org",
+        "owner": "obsidiansystems",
+        "repo": "obelisk",
+        "rev": "7ad33cbe3e84b209e83c505ce25486445bbd602e",
+        "sha256": "0dlk8y6rxc87crw7764zq2py7nqn38lw496ca1y893m9gdq8qdkz",
+        "type": "tarball",
+        "url": "https://github.com/obsidiansystems/obelisk/archive/7ad33cbe3e84b209e83c505ce25486445bbd602e.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }
