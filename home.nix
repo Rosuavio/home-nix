@@ -58,6 +58,8 @@ in
   home.packages = with pkgs; [
     nix
 
+    killall
+
     ihp-new
 
     obelisk.command
