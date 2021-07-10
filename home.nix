@@ -51,7 +51,7 @@ in
   home.packages = with pkgs; [
     nix
 
-    alacritty
+    hack-font
 
     watchman
     inotify-tools
@@ -78,6 +78,7 @@ in
     bash.enable = true;
     bat.enable = true;
     ssh.enable = true;
+    foot.enable = true;
 
     vscode = {
       enable = true;

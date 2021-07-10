@@ -16,7 +16,7 @@ in
       startup = [
         { command = "mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | ${pkgs.wob}/bin/wob"; }
       ];
-      terminal = "${pkgs.alacritty}/bin/alacritty";
+      terminal = "${pkgs.foot}/bin/foot";
       input = {
         "type:touchpad" = {
           natural_scroll = "enabled";
