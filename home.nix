@@ -8,7 +8,7 @@ in
   imports = [
     ./vim
     ./gpg.nix
-    # ./sway.nix
+    ./sway.nix
     ./kakoune.nix
     ./archive.nix
     ./yubikey.nix
