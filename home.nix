@@ -35,8 +35,6 @@ in
     language.base = "en_US";
   };
 
-  fonts.fontconfig.enable = true;
-
   xdg = {
     enable = true;
 
