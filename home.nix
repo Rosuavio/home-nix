@@ -36,6 +36,7 @@ in
     enable = true;
 
     userDirs.enable = true;
+    userDirs.createDirectories = true;
 
     mime.enable = true;
 
