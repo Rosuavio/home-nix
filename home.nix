@@ -110,4 +110,32 @@ in
       package = pkgs.brave;
     };
   };
+
+  gtk = {
+    enable = true;
+    theme = {
+      name = "Breeze-Dark";
+      package = pkgs.libsForQt5.breeze-gtk;
+    };
+    iconTheme = {
+      name = "Breeze-Dark";
+      package = pkgs.libsForQt5.breeze-gtk;
+    };
+    gtk3.extraConfig = {
+      gtk-application-prefer-dark-theme = 1;
+    };
+  };
+
+  qt = {
+    enable = true;
+    platformTheme = "gtk";
+    style = {
+      name = "Breeze-Dark";
+      package = pkgs.LibsForQt5.breeze;
+    };
+  };
+
+  dconf = {
+    enable = true;
+  };
 }
