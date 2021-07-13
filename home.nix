@@ -55,8 +55,11 @@ in
 
   home.packages = with pkgs; [
     nix
+    cachix
 
     killall
+    gnumake
+    xdg-utils
 
     ihp-new
 
@@ -91,6 +94,11 @@ in
     bat.enable = true;
     ssh.enable = true;
     foot.enable = true;
+
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
 
     vscode = {
       enable = true;
