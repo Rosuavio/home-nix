@@ -7,7 +7,7 @@ let
     stdenv = pkgs.stdenv;
   };
 
-  browser = "firefox";
+  browser = "firefox.desktop";
 in
 {
   programs.firefox = {
