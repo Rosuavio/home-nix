@@ -2,10 +2,10 @@
   {
     "bitwarden" = buildFirefoxXpiAddon {
       pname = "bitwarden";
-      version = "1.50.0";
+      version = "1.51.1";
       addonId = "{446900e4-71c2-419f-a6a7-df9c091e268b}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/3775487/bitwarden_free_password_manager-1.50.0-an+fx.xpi";
-      sha256 = "0361ae35139c613c4b27fa80f094db250f4510f36eb5eafefdadc6f89b2050f9";
+      url = "https://addons.mozilla.org/firefox/downloads/file/3807401/bitwarden_free_password_manager-1.51.1-an+fx.xpi";
+      sha256 = "9cd1db78e612473e1c7a9e57b9868f82b3d5fd770cbea7ffa488cc9efc65a345";
       meta = with lib;
       {
         homepage = "https://bitwarden.com";
@@ -16,10 +16,10 @@
       };
     "ipfs-companion" = buildFirefoxXpiAddon {
       pname = "ipfs-companion";
-      version = "2.19.0";
+      version = "2.19.1";
       addonId = "ipfs-firefox-addon@lidel.org";
-      url = "https://addons.mozilla.org/firefox/downloads/file/3773956/ipfs_companion-2.19.0-an+fx.xpi";
-      sha256 = "84652c6bf37889d4d6511b48860b76835fa7ea8fff03b7a23a013f882675337e";
+      url = "https://addons.mozilla.org/firefox/downloads/file/3804013/ipfs_companion-2.19.1-an+fx.xpi";
+      sha256 = "6abe23deb1fdf9e0634aa8bd0c8115b03631affc67e2a88b47590b389dca2017";
       meta = with lib;
       {
         homepage = "https://github.com/ipfs-shipyard/ipfs-companion";
@@ -30,10 +30,10 @@
       };
     "noscript" = buildFirefoxXpiAddon {
       pname = "noscript";
-      version = "11.2.8";
+      version = "11.2.10";
       addonId = "{73a6fe31-595d-460b-a920-fcc0f8843232}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/3778947/noscript_security_suite-11.2.8-an+fx.xpi";
-      sha256 = "4744f9d99acbe9dec3557765edd9173272b4681c8425228fb6af52493f853467";
+      url = "https://addons.mozilla.org/firefox/downloads/file/3814113/noscript_security_suite-11.2.10-an+fx.xpi";
+      sha256 = "4d3b68f77647d0afcf28a6c5223c7fdc8af591f4087eede149a195ef80eec32b";
       meta = with lib;
       {
         homepage = "https://noscript.net";
@@ -58,10 +58,10 @@
       };
     "react-devtools" = buildFirefoxXpiAddon {
       pname = "react-devtools";
-      version = "4.13.5";
+      version = "4.14.0";
       addonId = "@react-devtools";
-      url = "https://addons.mozilla.org/firefox/downloads/file/3781975/react_developer_tools-4.13.5-fx.xpi";
-      sha256 = "d397fc7b3e2b7ac57d2fabf380408731c694dd52afa871e7808dfbb3531b623a";
+      url = "https://addons.mozilla.org/firefox/downloads/file/3811140/react_developer_tools-4.14.0-fx.xpi";
+      sha256 = "afa732941ac8bc6bedcdc7995baafef82d6485851799f3766928ebd3ca632ec2";
       meta = with lib;
       {
         homepage = "https://github.com/facebook/react";
@@ -86,10 +86,10 @@
       };
     "stylus" = buildFirefoxXpiAddon {
       pname = "stylus";
-      version = "1.5.17";
+      version = "1.5.19";
       addonId = "{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/3732726/stylus-1.5.17-fx.xpi";
-      sha256 = "6d0d770c7ebf8938533eec7d55952d0845df3c47b1783a23b4f513e6cae58f09";
+      url = "https://addons.mozilla.org/firefox/downloads/file/3810495/stylus-1.5.19-fx.xpi";
+      sha256 = "58810c68aefb238ded3a73ae0e76540d290eb575ba42ea142bfd73a2387bbc4e";
       meta = with lib;
       {
         homepage = "https://add0n.com/stylus.html";
