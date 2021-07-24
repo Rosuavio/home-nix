@@ -27,7 +27,7 @@ niv update
 
 To update firefox addons
 ```sh
-pkgs-firefox-addons firefox/addons/addons.json firefox/addons/generated-firefox-addons.nix
+nixpkgs-firefox-addons firefox/addons/addons.json firefox/addons/generated-firefox-addons.nix
 ```
 
 > **TODO:** consolidate updating to one update script.
