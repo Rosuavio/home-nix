@@ -17,10 +17,10 @@
         "homepage": "https://ihp.digitallyinduced.com/",
         "owner": "digitallyinduced",
         "repo": "ihp",
-        "rev": "38b902074df5051a18b66f1cad0025d13afc3747",
-        "sha256": "11r7fmq7xx7vs8vgpw69755k8hx0prs03hn6qi5ri9l1h6hr2yy8",
+        "rev": "d55aab3c9e7a080adb02d9af6ce727796d43a317",
+        "sha256": "1xvplwg224q89ag8nr5d2xzmkdgp7a9x4p9l3y705kx7xk59dpsp",
         "type": "tarball",
-        "url": "https://github.com/digitallyinduced/ihp/archive/38b902074df5051a18b66f1cad0025d13afc3747.tar.gz",
+        "url": "https://github.com/digitallyinduced/ihp/archive/d55aab3c9e7a080adb02d9af6ce727796d43a317.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "niv": {
@@ -41,10 +41,10 @@
         "homepage": "",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "c06613c25df3fe1dd26243847a3c105cf6770627",
-        "sha256": "16si1436wf3fcx91p6cy3qxaib8kr78qivbi69lq4m63n96gglkv",
+        "rev": "63ee5cd99a2e193d5e4c879feb9683ddec23fa03",
+        "sha256": "0avbsx5chbwr0y55shndkzf0ixx3bznbzq526p5nj8llryxa10af",
         "type": "tarball",
-        "url": "https://github.com/nixos/nixpkgs/archive/c06613c25df3fe1dd26243847a3c105cf6770627.tar.gz",
+        "url": "https://github.com/nixos/nixpkgs/archive/63ee5cd99a2e193d5e4c879feb9683ddec23fa03.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nur-combined": {
@@ -53,10 +53,10 @@
         "homepage": "https://github.com/nix-community/NUR",
         "owner": "nix-community",
         "repo": "nur-combined",
-        "rev": "0242ad70c5fa9d52d41d8dfa19c900e6c39918b1",
-        "sha256": "1df6khpihry0vspxzflyq39xs5qa86df8iisa402bhb072sy1c8k",
+        "rev": "bb95096bd4ee650a688ec6e6db4820d85a5e063a",
+        "sha256": "1n7if9wk87526rq6lidkcxm1adydfz5rv8p00r6fp4ss5lj3kjgi",
         "type": "tarball",
-        "url": "https://github.com/nix-community/nur-combined/archive/0242ad70c5fa9d52d41d8dfa19c900e6c39918b1.tar.gz",
+        "url": "https://github.com/nix-community/nur-combined/archive/bb95096bd4ee650a688ec6e6db4820d85a5e063a.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "obelisk": {
