@@ -59,6 +59,7 @@ in
 
   home.packages = with pkgs; [
     nix
+    niv
 
     killall
     xdg-utils
