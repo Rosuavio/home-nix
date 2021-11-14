@@ -13,6 +13,11 @@ in
       XDG_CURRENT_DESKTOP = "sway";
       XDG_SESSION_TYPE = "wayland";
     };
+
+    programs.mako = {
+      enable = true;
+      defaultTimeout = 10 * 1000;
+    };
   };
 
   config.wayland.windowManager.sway = {
