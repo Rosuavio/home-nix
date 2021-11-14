@@ -34,6 +34,8 @@ in
     language.base = "en_US";
   };
 
+  systemd.user.startServices = "sd-switch";
+
   xdg = {
     enable = true;
 
