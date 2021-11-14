@@ -82,6 +82,8 @@ in
     libreoffice
   ];
 
+  services.keybase.enable = true;
+
   programs = {
     bash.enable = true;
     bat.enable = true;
