@@ -6,8 +6,7 @@ let
   sources = import ./nix/sources.nix;
 
   ihp-new = (import "${sources.ihp}/ProjectGenerator/default.nix" { inherit pkgs; });
-  obelisk = (import sources.obelisk {});
-
+  obelisk = import sources.obelisk {};
 in
 {
   imports = [
@@ -152,7 +151,5 @@ in
     };
   };
 
-  dconf = {
-    enable = true;
-  };
+  dconf.enable = true;
 }
