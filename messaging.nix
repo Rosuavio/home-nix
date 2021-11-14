@@ -7,6 +7,8 @@
     discord
     signal-desktop
     gitter
+    slack
+    element-desktop
   ];
 
   xdg.mimeApps.defaultApplications = {

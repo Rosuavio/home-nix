@@ -84,9 +84,6 @@ in
     inkscape
     libreoffice
     exercism
-    slack
-
-    element-desktop
   ];
 
   programs = {
