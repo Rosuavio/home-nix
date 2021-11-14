@@ -61,6 +61,7 @@ in
     nix
     niv
 
+    epiphany
     killall
     xdg-utils
 
