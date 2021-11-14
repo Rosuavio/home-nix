@@ -18,6 +18,12 @@ in
       enable = true;
       defaultTimeout = 10 * 1000;
     };
+
+    services.wlsunset = {
+      enable = true;
+      latitude = "28.636591";
+      longitude = "-81.371088";
+    };
   };
 
   config.wayland.windowManager.sway = {
