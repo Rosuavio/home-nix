@@ -6,6 +6,7 @@ let
   bctl = "${pkgs.brightnessctl}/bin/brightnessctl";
   light = "${pkgs.light}/bin/light";
   swaylock = "${pkgs.swaylock}/bin/swaylock";
+  sModifier = "Mod4";
 in
 {
   config = {
@@ -32,6 +33,7 @@ in
     systemdIntegration = true;
 
     config = {
+      modifier = sModifier;
       startup = [
         { command = "mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | ${pkgs.wob}/bin/wob"; }
       ];
@@ -44,10 +46,8 @@ in
       };
 
       keybindings =
-        let
-          modifier = config.wayland.windowManager.sway.config.modifier;
-        in pkgs.lib.mkOptionDefault {
-          "${modifier}+ctrl+l" = "exec ${swaylock}";
+        pkgs.lib.mkOptionDefault {
+          "${sModifier}+ctrl+l" = "exec ${swaylock}";
 
           XF86MonBrightnessDown = "exec ${bctl} -q set 5%- && ${light} -G | cut -d'.' -f1 > $SWAYSOCK.wob";
           XF86MonBrightnessUp   = "exec ${bctl} -q set +5% && ${light} -G | cut -d'.' -f1 > $SWAYSOCK.wob";
