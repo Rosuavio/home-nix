@@ -118,6 +118,7 @@ in
       extensions = with pkgs.vscode-extensions; [
         jnoortheen.nix-ide
         streetsidesoftware.code-spell-checker
+        jock.svg
       ];
     };
 
