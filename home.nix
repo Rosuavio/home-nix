@@ -104,6 +104,7 @@ in
 
         "editor.renderWhitespace" = "all";
         "[nix]"."editor.tabSize" = 2;
+        "nix.enableLanguageServer" = true;
 
         "diffEditor.ignoreTrimWhitespace" = false;
       };
