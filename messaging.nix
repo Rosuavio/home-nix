@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     teams
     zoom-us
+    jitsi-meet
     skype
     discord
     signal-desktop
