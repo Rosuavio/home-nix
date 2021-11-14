@@ -22,13 +22,9 @@ in
 
     # TODO: Map all attrs to a list.
     extensions = [
-      addons.redux-devtools
       addons.bitwarden
       addons.noscript
       addons.stylus
-      addons.react-devtools
-      addons.plasma-integration
-      addons.ipfs-companion
     ];
   };
 

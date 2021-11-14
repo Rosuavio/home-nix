@@ -1,8 +1,4 @@
-[  
-  {
-    "slug": "reduxdevtools",
-    "pname": "redux-devtools"
-  },
+[
   {
     "slug": "bitwarden-password-manager",
     "pname": "bitwarden"
@@ -13,15 +9,5 @@
   {
     "slug": "styl-us",
     "pname": "stylus"
-  },
-  {
-    "slug": "react-devtools"
-  },
-  { 
-    "slug": "plasma-integration"
-  },
-  {
-    "slug": "ipfs-companion"
   }
 ]
-  
