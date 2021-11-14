@@ -1,8 +1,6 @@
 { pkgs, config, ... }:
 {
   home.packages = with pkgs; [
-    gitAndTools.gh
-
     radicle-upstream
   ];
 
@@ -24,6 +22,12 @@
 
         init.defaultBranch = "main";
       };
+    };
+
+    gh = {
+      enable = true;
+
+      gitProtocol = "ssh";
     };
   };
 }
