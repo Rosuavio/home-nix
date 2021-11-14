@@ -107,6 +107,44 @@ in
         "nix.enableLanguageServer" = true;
 
         "diffEditor.ignoreTrimWhitespace" = false;
+
+        "cSpell.enabledLanguageIds" = [
+          "asciidoc"
+          "c"
+          "cpp"
+          "csharp"
+          "css"
+          "git-commit"
+          "go"
+          "graphql"
+          "handlebars"
+          "haskell"
+          "html"
+          "jade"
+          "java"
+          "javascript"
+          "javascriptreact"
+          "json"
+          "jsonc"
+          "latex"
+          "less"
+          "markdown"
+          "php"
+          "plaintext"
+          "python"
+          "pug"
+          "restructuredtext"
+          "rust"
+          "scala"
+          "scss"
+          "text"
+          "typescript"
+          "typescriptreact"
+          "yaml"
+          "yml"
+          "sql"
+          "nix"
+        ];
       };
       package = pkgs.vscodium;
 
