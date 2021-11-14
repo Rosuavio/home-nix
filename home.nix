@@ -166,6 +166,8 @@ in
     };
   };
 
+  fonts.fontconfig.enable = true;
+
   gtk = {
     enable = true;
     theme = {
