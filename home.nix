@@ -59,20 +59,14 @@ in
 
   home.packages = with pkgs; [
     nix
-    cachix
 
     killall
-    gnumake
     xdg-utils
 
     ihp-new
-
     obelisk.command
 
     hack-font
-
-    watchman
-    inotify-tools
 
     hunspell
     hunspellDicts.en-us
@@ -80,14 +74,10 @@ in
 
     rnix-lsp
 
-    # needed so that coc can work https://github.com/neoclide/coc.nvim/wiki/Install-coc.nvim#requirements
-    nodejs
-
     spotify
     bitwarden
     inkscape
     libreoffice
-    exercism
   ];
 
   programs = {
