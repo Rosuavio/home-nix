@@ -8,6 +8,13 @@ let
   swaylock = "${pkgs.swaylock}/bin/swaylock";
 in
 {
+  config = {
+    home.sessionVariables = {
+      XDG_CURRENT_DESKTOP = "sway";
+      XDG_SESSION_TYPE = "wayland";
+    };
+  };
+
   config.wayland.windowManager.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
