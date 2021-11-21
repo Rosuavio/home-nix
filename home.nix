@@ -12,13 +12,11 @@ in
   imports = [
     ./vim
     ./gpg.nix
-    ./sway.nix
     ./kakoune.nix
     ./archive.nix
     ./yubikey.nix
-    ./firefox
     ./git.nix
-    ./messaging.nix
+    ./graphical
   ];
 
   home = {
