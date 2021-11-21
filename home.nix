@@ -40,26 +40,20 @@ in
   xdg = {
     enable = true;
 
-    userDirs.enable = true;
-    userDirs.createDirectories = true;
+    userDirs = {
+      enable = true;
+      createDirectories = true;
+    };
 
     mime.enable = true;
 
-    mimeApps = {
-      enable = true;
-
-      defaultApplications = {
-        "x-scheme-handler/bitwarden" = [ "Bitwarden.desktop" ];
-      };
-    };
+    mimeApps.enable = true;
   };
-
 
   home.packages = with pkgs; [
     nix
     niv
 
-    epiphany
     killall
     xdg-utils
 
@@ -70,14 +64,8 @@ in
 
     hunspell
     hunspellDicts.en-us
-    okular
 
     rnix-lsp
-
-    spotify
-    bitwarden
-    inkscape
-    libreoffice
   ];
 
   services.keybase.enable = true;
@@ -86,42 +74,10 @@ in
     bash.enable = true;
     bat.enable = true;
     ssh.enable = true;
-    foot.enable = true;
 
     direnv = {
       enable = true;
       nix-direnv.enable = true;
-    };
-
-    chromium = {
-      enable = true;
-      package = pkgs.brave;
-    };
-  };
-
-  fonts.fontconfig.enable = true;
-
-  gtk = {
-    enable = true;
-    theme = {
-      name = "Breeze-Dark";
-      package = pkgs.libsForQt5.breeze-gtk;
-    };
-    iconTheme = {
-      name = "Breeze-Dark";
-      package = pkgs.libsForQt5.breeze-gtk;
-    };
-    gtk3.extraConfig = {
-      gtk-application-prefer-dark-theme = 1;
-    };
-  };
-
-  qt = {
-    enable = true;
-    platformTheme = "gtk";
-    style = {
-      name = "Breeze-Dark";
-      package = pkgs.LibsForQt5.breeze;
     };
   };
 

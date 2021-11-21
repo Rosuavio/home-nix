@@ -9,25 +9,12 @@ let
   sModifier = "Mod4";
 in
 {
-  config = {
-    home.sessionVariables = {
-      XDG_CURRENT_DESKTOP = "sway";
-      XDG_SESSION_TYPE = "wayland";
-    };
-
-    programs.mako = {
-      enable = true;
-      defaultTimeout = 10 * 1000;
-    };
-
-    services.wlsunset = {
-      enable = true;
-      latitude = "28.636591";
-      longitude = "-81.371088";
-    };
+  home.sessionVariables = {
+    XDG_CURRENT_DESKTOP = "sway";
+    XDG_SESSION_TYPE = "wayland";
   };
 
-  config.wayland.windowManager.sway = {
+  wayland.windowManager.sway = {
     enable = true;
     wrapperFeatures.gtk = true;
     systemdIntegration = true;
