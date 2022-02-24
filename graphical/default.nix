@@ -10,12 +10,12 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Breeze-Dark";
-      package = pkgs.libsForQt5.breeze-gtk;
+      name = "Adwaita-dark";
+      package = pkgs.gnome.gnome-themes-extra;
     };
     iconTheme = {
-      name = "Breeze-Dark";
-      package = pkgs.libsForQt5.breeze-gtk;
+      name = "Adwaita-dark";
+      package = pkgs.gnome.adwaita-icon-theme;
     };
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
@@ -24,10 +24,10 @@
 
   qt = {
     enable = true;
-    platformTheme = "gtk";
+    platformTheme = "gnome";
     style = {
-      name = "Breeze-Dark";
-      package = pkgs.LibsForQt5.breeze;
+      name = "Adwaita-Dark";
+      package = pkgs.adwaita-qt;
     };
   };
 
