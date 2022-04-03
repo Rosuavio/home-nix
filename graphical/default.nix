@@ -38,6 +38,11 @@
     spotify
     bitwarden
     libreoffice
+
+    swaylock swayidle
+    grim slurp
+    imv
+    wl-clipboard
   ];
 
   xdg.mimeApps.defaultApplications = {
@@ -56,6 +61,11 @@
     chromium = {
       enable = true;
       package = pkgs.brave;
+    };
+
+    obs-studio = {
+      enable = true;
+      plugins = [ pkgs.obs-studio-plugins.wlrobs ];
     };
   };
 

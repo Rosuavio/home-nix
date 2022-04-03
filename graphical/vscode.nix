@@ -62,6 +62,8 @@
       jnoortheen.nix-ide
       streetsidesoftware.code-spell-checker
       jock.svg
+      editorconfig.editorconfig
+      haskell.haskell
     ];
   };
 }

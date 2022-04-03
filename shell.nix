@@ -6,6 +6,8 @@ let
 
   pkgs = import nixpkgs {};
 
+  foo = pkgs.writeShellScriptBin "foo" "";
+
 in pkgs.mkShell rec {
 
   name = "home-manager-shell";
@@ -14,6 +16,7 @@ in pkgs.mkShell rec {
     niv
     (import sources.home-manager {inherit pkgs;}).home-manager
     (import sources.nur-combined {inherit pkgs;}).repos.rycee.firefox-addons-generator
+    foo
   ];
 
   shellHook = ''

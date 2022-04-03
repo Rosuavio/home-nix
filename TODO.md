@@ -32,3 +32,11 @@ Also the os config would need to provide default envs and tools for new users.
 
 # HLS
 See if it makes sense to set up hls in home-manger rather than just in dev shells.
+
+# Git-lfs
+It seems like git-lfs only uses http(s) or something https://stackoverflow.com/questions/42429028/git-lfs-asking-for-passphrase-for-every-tracked-file
+and this causes `git clone` to keep asking for ssh passphrase, like 20 times. Very annoying. 
+
+I can just use some kind of cred cacher or something. Or maybe I can rase/fix the issue upstream. git/git-lfs/home-manager/nixos?
+
+I can either be involved in fixing git/git-lfs or change default configs in home-manager or nixos.
