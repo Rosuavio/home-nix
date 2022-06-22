@@ -7,31 +7,11 @@ let
 
   obelisk = import sources.obelisk {};
 
-  edtiorInNewTerm = pkgs.writeShellScriptBin "edtiorInNewTerm" ''
-    $TERM sh -c "$EDITOR $@" &>/dev/null &
-  '';
+  nix-thunk = import sources.nix-thunk {};
 
-  kakouneDesktop =
-    pkgs.writeTextDir "share/applications/kakoune.desktop"
-      (lib.generators.toINI { } {
-        "Desktop Entry" = {
-          Name = "Kakoune";
-          Type = "Application";
-          TryExec = "kak";
-          # TODO make this more generic. Use whatever $TERM is.
-          Exec = "${edtiorInNewTerm}/bin/edtiorInNewTerm %U";
-          # Exec = "${pkgs.bash}/bin/sh -c '$TERM kak'";
-          Terminal = true;
-          Icon = "kakoune";
-          Comment = "Edit text";
-          GenericName = "Text Editor";
-          StartupNotify= true;
-          MimeType =
-            "text/english;text/plain;text/x-makefile;text/x-c++hdr;text/x-c++src;text/x-chdr;text/x-csrc;text/x-java;text/x-moc;text/x-pascal;text/x-tcl;text/x-tex;application/x-shellscript;text/x-c;text/x-c++;text/x-haskell;text/markdown;text/x-python;application/x-yaml";
-          Catagories = "Development;TextEditor;";
-          StartupWMClass = "Kakoune";
-        };
-      });
+  new-terminal = pkgs.writeShellScriptBin "new-terminal" "$TERM $@ &>/dev/null &";
+# $TERM sh -c "$EDITOR $@" &>/dev/null &
+  new-shell = pkgs.writeShellScriptBin "new-shell" "$TERM sh -c $@";
 in
 {
   imports = [
@@ -101,8 +81,18 @@ in
     universal-ctags
     tmux
     ripgrep
-    (hiPrio kakouneDesktop)
     jq
+
+    rustc
+    cargo
+    wget
+
+    (aspellWithDicts (ps : [ ps.en ]))
+
+    new-terminal
+    new-shell
+    pulsemixer
+    nix-thunk.command
   ];
 
   services.keybase.enable = true;

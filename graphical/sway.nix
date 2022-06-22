@@ -26,30 +26,31 @@ in
       modifier = sModifier;
       startup = [
         { command = "mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | ${pkgs.wob}/bin/wob"; }
-        { command = "${nscpotInNewTerm}/bin/nscpotInNewTerm"; }
+        # { command = "${nscpotInNewTerm}/bin/nscpotInNewTerm"; }
         { command = "element-desktop"; }
-        { command = "slack"; }
+        # { command = "slack"; }
         { command = "signal-desktop"; }
       ];
       workspaceOutputAssign = [
         { workspace = "1"; output = "\"Dell Inc. DELL S3221QS H8CQTB3\""; }
-        { workspace = "2"; output = "\"Dell Inc. DELL P2415Q 59JJ479U04NB\""; }
-        { workspace = "3: other"; output = "\"Dell Inc. DELL P2415Q G3D7F6BQ08PL\""; }
+        { workspace = "5"; output = "\"Dell Inc. DELL P2415Q 59JJ479U04NB\""; }
+        { workspace = "8: other"; output = "\"Dell Inc. DELL P2415Q G3D7F6BQ08PL\""; }
+        { workspace = "9: media"; output = "\"Dell Inc. DELL P2415Q G3D7F6BQ08PL\""; }
       ];
       assigns = {
-        "3: other" = [
+        "8: other" = [
           { class = "Slack"; }
           { class = "Element"; }
           { class = "Signal"; }
           { class = "discord"; }
         ];
+        "9: media" = [ ];
       };
       terminal = "${pkgs.foot}/bin/foot";
 
       output = {
         "Dell Inc. DELL S3221QS H8CQTB3" = {
           pos = "0 0";
-          adaptive_sync = "off";
         };
         "Dell Inc. DELL P2415Q 59JJ479U04NB" = {
           mode = "2560x1440";
@@ -111,7 +112,5 @@ in
       export XDG_CURRENT_DESKTOP="sway"
       export XDG_SESSION_TYPE="wayland"
     '';
-
-    extraOptions = [ "--unsupported-gpu" "--my-next-gpu-wont-be-nvidia" ];
   };
 }

@@ -2,10 +2,10 @@
   {
     "bitwarden" = buildFirefoxXpiAddon {
       pname = "bitwarden";
-      version = "1.56.6";
+      version = "2022.5.0";
       addonId = "{446900e4-71c2-419f-a6a7-df9c091e268b}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/3910071/bitwarden_free_password_manager-1.56.6-an+fx.xpi";
-      sha256 = "e2820a8bf6ad6fb3c0d39585b721fdf11f5abce5e120f93d0d8d4ed04c0a647e";
+      url = "https://addons.mozilla.org/firefox/downloads/file/3960137/bitwarden_password_manager-2022.5.0.xpi";
+      sha256 = "20cb58113166c744f65fdc49ba83e2bc5a279be08aa7bf058a9a5414240d637a";
       meta = with lib;
       {
         homepage = "https://bitwarden.com";
@@ -16,10 +16,10 @@
       };
     "noscript" = buildFirefoxXpiAddon {
       pname = "noscript";
-      version = "11.3.3";
+      version = "11.4.6";
       addonId = "{73a6fe31-595d-460b-a920-fcc0f8843232}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/3911935/noscript_security_suite-11.3.3-an+fx.xpi";
-      sha256 = "730dacfae764ac26a2dfb7a9e86c05374778ee8236c0fd1dbcee31436843157c";
+      url = "https://addons.mozilla.org/firefox/downloads/file/3954910/noscript-11.4.6.xpi";
+      sha256 = "5f917e54a52d7269959976ebb6eb41f1a14c047c30d5f7bd6a401fe4126f0b3a";
       meta = with lib;
       {
         homepage = "https://noscript.net";
@@ -30,10 +30,10 @@
       };
     "stylus" = buildFirefoxXpiAddon {
       pname = "stylus";
-      version = "1.5.21";
+      version = "1.5.25";
       addonId = "{7a7a4a92-a2a0-41d1-9fd7-1e92480d612d}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/3828033/stylus-1.5.21-fx.xpi";
-      sha256 = "cb330a7d8748493a415ee0705839e519c7bb045d91c5068d15e1d02eb661634e";
+      url = "https://addons.mozilla.org/firefox/downloads/file/3956290/styl_us-1.5.25.xpi";
+      sha256 = "64a872e97eb7ab4b571c4408ea3f2b69c09b5a2bf7a4c54387d31bd360a31277";
       meta = with lib;
       {
         homepage = "https://add0n.com/stylus.html";
