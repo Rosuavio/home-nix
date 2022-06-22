@@ -118,6 +118,10 @@ in
 
         PROMPT_COMMAND=osc7_cwd
 
+        if [[ -n "$IN_NIX_SHELL" ]]; then
+          export PS1="\n\[\033[1;32m\][$IN_NIX_SHELL-shell:\w]\$\[\033[0m\] "
+        fi
+
         unset SSH_AGENT_PID
         if [ "''${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
           export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
