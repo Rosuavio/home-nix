@@ -40,3 +40,7 @@ and this causes `git clone` to keep asking for ssh passphrase, like 20 times. Ve
 I can just use some kind of cred cacher or something. Or maybe I can rase/fix the issue upstream. git/git-lfs/home-manager/nixos?
 
 I can either be involved in fixing git/git-lfs or change default configs in home-manager or nixos.
+
+# Colorized terminal
+It would be really good to make things automatically optimized for colorized output when I **KNOW** it is avaiable.
+We can used non-colorized/default configs when we do not know that colorized output is avaiable.

@@ -1,7 +1,8 @@
-{ pkgs, config, ... }:
+{ pkgs, lib, config, ... }:
 {
   home.packages = with pkgs; [
     radicle-upstream
+    difftastic
   ];
 
   programs = {
@@ -11,8 +12,9 @@
       userEmail = "RosarioPulella@gmail.com";
 
       extraConfig = {
-        diff.tool = "vimdiff";
+        diff.tool = "difftastic";
         difftool.prompt = false;
+        difftool.difftastic.cmd = ''${lib.getExe pkgs.difftastic} "$LOCAL" "$REMOTE"'';
 
         mergetool.prompt = false;
         merge = {
