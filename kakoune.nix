@@ -112,6 +112,21 @@ in
           commands = "set-option global termcmd 'foot /bin/sh -c'";
         }
         {
+          name = "ModuleLoaded";
+          option = "fzf-grep";
+          commands = ''
+            set global fzf_grep_command 'rg'
+          '';
+        }
+        {
+          name = "ModuleLoaded";
+          option = "fzf-file";
+          commands = ''
+            set global fzf_file_command 'rg'
+            set global fzf_highlight_command 'bat'
+          '';
+        }
+        {
           name = "WinSetOption";
           # Maybe can split out the list of filetypes to use lsp for to a nix list.
           option = "filetype=(nix|typescript|toml|json)";
@@ -164,7 +179,6 @@ in
     pkgs.rnix-lsp
     pkgs.rustfmt
     pkgs.rust-analyzer
-    pkgs.haskell-language-server
     pkgs.nodePackages.vscode-json-languageserver
     pkgs.nodePackages.typescript-language-server
     pkgs.taplo-lsp

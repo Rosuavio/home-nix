@@ -15,7 +15,7 @@ in pkgs.mkShell rec {
   buildInputs = with pkgs; [
     niv
     (import sources.home-manager {inherit pkgs;}).home-manager
-    (import sources.nur-combined {inherit pkgs;}).repos.rycee.firefox-addons-generator
+    (import sources.nur-combined {inherit pkgs;}).repos.ethancedwards8.firefox-addons-generator
     foo
   ];
 

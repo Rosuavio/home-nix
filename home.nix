@@ -12,6 +12,7 @@ let
   new-terminal = pkgs.writeShellScriptBin "new-terminal" "$TERM $@ &>/dev/null &";
 # $TERM sh -c "$EDITOR $@" &>/dev/null &
   new-shell = pkgs.writeShellScriptBin "new-shell" "$TERM sh -c $@";
+
 in
 {
   imports = [
@@ -22,12 +23,13 @@ in
     ./yubikey.nix
     ./git.nix
     ./graphical
+    ./music.nix
   ];
 
   home = {
     username = username;
     homeDirectory = "/home/" + username;
-    stateVersion = "21.11";
+    stateVersion = "22.05";
 
     sessionVariables = {
       EDITOR = editor;
@@ -91,11 +93,28 @@ in
 
     new-terminal
     new-shell
-    pulsemixer
     nix-thunk.command
+
+    tree
+    ripgrep
+
+    dbeaver
+    socat
+    file
   ];
 
-  services.keybase.enable = true;
+  xdg.configFile."wireplumber/bluetooth.lua.d/50-bluze-config.lua" = {
+    text = ''
+    bluez_monitor.properties = {
+      -- Enables bluetooth headset media controls
+      ["bluez5.headset-roles"] = "[ hsp_hs hsp_ag hfp_hf hfp_ag ]",
+    }
+    '';
+  };
+
+  services = {
+    keybase.enable = true;
+  };
 
   programs = {
     bash = {
@@ -129,7 +148,9 @@ in
       '';
     };
     bat.enable = true;
-    ssh.enable = true;
+    ssh = {
+      enable = true;
+    };
 
     direnv = {
       enable = true;
@@ -145,6 +166,11 @@ in
 
     nnn = {
       enable = true;
+      bookmarks = {
+        h = "~";
+        d = "~/Documents";
+        D = "~/Downloads";
+      };
       extraPackages = [
         pkgs.ffmpegthumbnailer
         pkgs.mediainfo
@@ -152,13 +178,21 @@ in
       ];
     };
 
-    ncspot = {
-      enable = true;
-    };
-
     fzf = {
       enable = true;
       enableBashIntegration = true;
+    };
+
+    # TODO: Cant use rbw becuase I use 2FA and it does not seem to support it
+    # both rbw and bitw are lightwieght bitwarden clients with services/demons
+    # rbw seems like it might be a more active project and it has more attention (already packaged in nixpkgs)
+    # bitw provides a D-Bus service org.freedesktop.secrets which I really want!
+    # I need to see if I can make the two projects aware of eachother and spur them together.
+    rbw = {
+      enable = true;
+      settings = {
+        email = "RosarioPulella@gmail.com";
+      };
     };
   };
 

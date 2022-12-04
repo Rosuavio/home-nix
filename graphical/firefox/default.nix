@@ -18,6 +18,11 @@ in
     profiles.Rosario = {
       id = 0;
       isDefault = true;
+      settings = {
+        "extensions.autoDisableScopes" = 0;
+        "extensions.update.enable" = false;
+        "extensions.enabledScopes" = 15;
+      };
     };
 
     # TODO: Map all attrs to a list.
