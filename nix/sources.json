@@ -1,4 +1,17 @@
 {
+    "emanote": {
+        "branch": "master",
+        "description": "Emanate a structured view of your plain-text notes",
+        "homepage": "https://emanote.srid.ca",
+        "owner": "EmaApps",
+        "repo": "emanote",
+        "rev": "57a95cd208377c04efdb4e615f3f0d049ba32598",
+        "sha256": "0lrn47cvmz780pkjh4gi1nfi0ck0jwkvhibnlyasic4991yybc87",
+        "type": "tarball",
+        "url": "https://github.com/EmaApps/emanote/archive/refs/tags/1.0.0.0.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/refs/tags/<version>.tar.gz",
+        "version": "1.0.0.0"
+    },
     "home-manager": {
         "branch": "release-22.05",
         "description": "Manage a user environment using Nix",

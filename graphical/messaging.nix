@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     teams
     zoom-us
+    # This had a wired conflict with a LICENSE file
     jitsi-meet
     skypeforlinux
     discord

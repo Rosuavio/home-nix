@@ -9,6 +9,8 @@ let
 
   nix-thunk = import sources.nix-thunk {};
 
+  emanote = (import sources.emanote).packages.x86_64-linux.default;
+
   new-terminal = pkgs.writeShellScriptBin "new-terminal" "$TERM $@ &>/dev/null &";
 # $TERM sh -c "$EDITOR $@" &>/dev/null &
   new-shell = pkgs.writeShellScriptBin "new-shell" "$TERM sh -c $@";
@@ -101,6 +103,8 @@ in
     dbeaver
     socat
     file
+    # I should find a way to run things from my doc repo
+    emanote
   ];
 
   xdg.configFile."wireplumber/bluetooth.lua.d/50-bluze-config.lua" = {
