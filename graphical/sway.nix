@@ -30,17 +30,6 @@ in
         { command = "element-desktop"; }
         { command = "signal-desktop"; }
       ];
-      workspaceOutputAssign = [
-        { workspace = "1"; output = "\"Dell Inc. DELL S3221QS H8CQTB3\""; }
-        { workspace = "2"; output = "\"Dell Inc. DELL S3221QS H8CQTB3\""; }
-        { workspace = "3"; output = "\"Dell Inc. DELL S3221QS H8CQTB3\""; }
-        { workspace = "4"; output = "\"Dell Inc. DELL S3221QS H8CQTB3\""; }
-        { workspace = "5"; output = "\"Dell Inc. DELL S3221QS H8CQTB3\""; }
-        { workspace = "6"; output = "\"Dell Inc. DELL S3221QS H8CQTB3\""; }
-        { workspace = "7"; output = "\"Dell Inc. DELL S3221QS H8CQTB3\""; }
-        { workspace = "8"; output = "\"Dell Inc. DELL P2415Q 59JJ479U04NB\""; }
-        { workspace = "9: other"; output = "\"Dell Inc. DELL P2415Q G3D7F6BQ08PL\""; }
-      ];
       assigns = {
         "9: other" = [
           { class = "Slack"; }
@@ -54,19 +43,6 @@ in
       output = {
         "*" = {
           bg = "#000000 solid_color";
-        };
-        "Dell Inc. DELL S3221QS H8CQTB3" = {
-          pos = "0 0";
-        };
-        "Dell Inc. DELL P2415Q 59JJ479U04NB" = {
-          mode = "2560x1440";
-          transform = "270";
-          pos = "3840 0";
-        };
-        "Dell Inc. DELL P2415Q G3D7F6BQ08PL" = {
-          mode = "2560x1440";
-          transform = "270";
-          pos = "5280 0";
         };
       };
 
