@@ -1,0 +1,7 @@
+#!/bin/sh
+
+file=$(fzf)
+if test "$file" != ""
+then
+  $TERM sh -c "$EDITOR $file" &>/dev/null &
+fi
