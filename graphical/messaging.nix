@@ -4,7 +4,7 @@
     teams
     zoom-us
     jitsi-meet
-    skype
+    skypeforlinux
     discord
     signal-desktop
     gitter

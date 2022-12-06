@@ -10,6 +10,11 @@
       userName = "Rosario Pulella";
       userEmail = "RosarioPulella@gmail.com";
 
+      # signing = {
+      #   signByDefault = true;
+      #   key = "C2D6906CEA3DB8D4";
+      # };
+
       extraConfig = {
         diff.tool = "vimdiff";
         difftool.prompt = false;

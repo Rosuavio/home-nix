@@ -4,7 +4,6 @@ let
 
   buildFirefoxXpiAddon = { pname, version, addonId, url, sha256, meta, ... }:
     stdenv.mkDerivation {
-      __contentAddressed = true;
       name = "${pname}-${version}";
 
       inherit meta;

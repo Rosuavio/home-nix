@@ -22,7 +22,7 @@ in
   home = {
     username = username;
     homeDirectory = "/home/" + username;
-    stateVersion = "21.05";
+    stateVersion = "21.11";
 
     sessionVariables = {
       EDITOR = editor;
@@ -71,7 +71,15 @@ in
   services.keybase.enable = true;
 
   programs = {
-    bash.enable = true;
+    bash = {
+      enable = true;
+      initExtra = ''
+        unset SSH_AGENT_PID
+        if [ "''${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
+          export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
+        fi
+      '';
+    };
     bat.enable = true;
     ssh.enable = true;
 
@@ -82,4 +90,9 @@ in
   };
 
   dconf.enable = true;
+
+  pam.sessionVariables = {
+    SSH_AGENT_PID = "";
+    SSH_AUTH_SOCK = "\${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh";
+  };
 }
