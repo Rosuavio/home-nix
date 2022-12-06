@@ -16,10 +16,10 @@
       };
     "noscript" = buildFirefoxXpiAddon {
       pname = "noscript";
-      version = "11.4.12";
+      version = "11.4.13";
       addonId = "{73a6fe31-595d-460b-a920-fcc0f8843232}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/4030389/noscript-11.4.12.xpi";
-      sha256 = "90f1164a87e5ff303b5d60882ee9458e9c1f775c67098b902662f8f4a1c27df6";
+      url = "https://addons.mozilla.org/firefox/downloads/file/4033638/noscript-11.4.13.xpi";
+      sha256 = "078026ae894fe516ce9e61a1084d1b6dc883cd72c51027de342132141ca7f00d";
       meta = with lib;
       {
         homepage = "https://noscript.net";
