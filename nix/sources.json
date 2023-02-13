@@ -5,7 +5,7 @@
         "homepage": "https://emanote.srid.ca",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "5693a0ecdf2cca5790873ca3d85b4a39e1d11f54",
+        "rev": "a6f21458536d9630657d36209225d3dd37363cda",
         "sha256": "0lrn47cvmz780pkjh4gi1nfi0ck0jwkvhibnlyasic4991yybc87",
         "type": "tarball",
         "url": "https://github.com/EmaApps/emanote/archive/refs/tags/1.0.0.0.tar.gz",
@@ -30,10 +30,10 @@
         "homepage": "https://github.com/nmattia/niv",
         "owner": "nmattia",
         "repo": "niv",
-        "rev": "351d8bc316bf901a81885bab5f52687ec8ccab6e",
-        "sha256": "1yzhz7ihkh6p2sxhp3amqfbmm2yqzaadqqii1xijymvl8alw5rrr",
+        "rev": "689d0e5539eddd0b0f566aee7bb18629eee7df74",
+        "sha256": "1rld3lk42l6b01f2gcrhq8qm9vry1awmfl29zmpiqda9dy89vbx0",
         "type": "tarball",
-        "url": "https://github.com/nmattia/niv/archive/351d8bc316bf901a81885bab5f52687ec8ccab6e.tar.gz",
+        "url": "https://github.com/nmattia/niv/archive/689d0e5539eddd0b0f566aee7bb18629eee7df74.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nix-thunk": {
@@ -42,10 +42,10 @@
         "homepage": null,
         "owner": "obsidiansystems",
         "repo": "nix-thunk",
-        "rev": "bd0de53129ca4ac5ce313a3e021edf3638a3a22c",
-        "sha256": "0cn74ylcfr9v2w94jpga9v18jn6zafb9k996afszn59iqlcfi74q",
+        "rev": "0982911d78fbd9932c3ed8104a930f313f49b69b",
+        "sha256": "130n8mzywbvyqd6aap6yk98zynq3r3kpj2hfzdym26plwz0rr3bj",
         "type": "tarball",
-        "url": "https://github.com/obsidiansystems/nix-thunk/archive/bd0de53129ca4ac5ce313a3e021edf3638a3a22c.tar.gz",
+        "url": "https://github.com/obsidiansystems/nix-thunk/archive/0982911d78fbd9932c3ed8104a930f313f49b69b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
@@ -54,10 +54,10 @@
         "homepage": "",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "7e72265b08d4c60f414a0f3ab162e24648e84342",
-        "sha256": "1gz02k7gfz9hdc597xzmgzds8dm1jmg8pipn66r5dqiqy1xdyn1n",
+        "rev": "0874168639713f547c05947c76124f78441ea46c",
+        "sha256": "0gw5l5bj3zcgxhp7ki1jafy6sl5nk4vr43hal94lhi15kg2vfmfy",
         "type": "tarball",
-        "url": "https://github.com/nixos/nixpkgs/archive/7e72265b08d4c60f414a0f3ab162e24648e84342.tar.gz",
+        "url": "https://github.com/nixos/nixpkgs/archive/0874168639713f547c05947c76124f78441ea46c.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nur-combined": {
@@ -66,10 +66,10 @@
         "homepage": "https://github.com/nix-community/NUR",
         "owner": "nix-community",
         "repo": "nur-combined",
-        "rev": "7c10bdc8e7f9519e5628121f1f43eac7607c6652",
-        "sha256": "1rd1pn4kc48m3zn63rdqbw37krvwn12nkjl7yvp1ivhi1bsqsihp",
+        "rev": "3c1192e541180d06b2ea8410805d775b2a1d3c40",
+        "sha256": "0rm0hh0v6gsryz9wmm6k74hd6ib0dml3sx5ryr3x776dd9vwhb1p",
         "type": "tarball",
-        "url": "https://github.com/nix-community/nur-combined/archive/7c10bdc8e7f9519e5628121f1f43eac7607c6652.tar.gz",
+        "url": "https://github.com/nix-community/nur-combined/archive/3c1192e541180d06b2ea8410805d775b2a1d3c40.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "obelisk": {
