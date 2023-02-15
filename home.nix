@@ -165,7 +165,7 @@ in
     broot = {
       enable = true;
       enableBashIntegration = true;
-      modal = true;
+      settings.modal = true;
     };
 
     nnn = {

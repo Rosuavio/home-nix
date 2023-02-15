@@ -5,7 +5,7 @@
         "homepage": "https://emanote.srid.ca",
         "owner": "EmaApps",
         "repo": "emanote",
-        "rev": "a6f21458536d9630657d36209225d3dd37363cda",
+        "rev": "ec9b985323ef3b2ae05db39f1b8808a43d081036",
         "sha256": "0lrn47cvmz780pkjh4gi1nfi0ck0jwkvhibnlyasic4991yybc87",
         "type": "tarball",
         "url": "https://github.com/EmaApps/emanote/archive/refs/tags/1.0.0.0.tar.gz",
@@ -13,15 +13,15 @@
         "version": "1.0.0.0"
     },
     "home-manager": {
-        "branch": "release-22.05",
+        "branch": "release-22.11",
         "description": "Manage a user environment using Nix",
         "homepage": "https://nix-community.github.io/home-manager/",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "6639e3a837fc5deb6f99554072789724997bc8e5",
-        "sha256": "0vg6x7cw2bpiga9k6nlj2n1vrm4qw84721gmlhp3j1i58v100ybc",
+        "rev": "65c47ced082e3353113614f77b1bc18822dc731f",
+        "sha256": "1fw01zfankc80rna9ch65p7bpg6fwcnvc0pmwvkpfazb7xq92108",
         "type": "tarball",
-        "url": "https://github.com/nix-community/home-manager/archive/6639e3a837fc5deb6f99554072789724997bc8e5.tar.gz",
+        "url": "https://github.com/nix-community/home-manager/archive/65c47ced082e3353113614f77b1bc18822dc731f.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "niv": {
@@ -49,15 +49,15 @@
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
-        "branch": "nixos-22.05",
+        "branch": "nixos-22.11",
         "description": "Nix Packages collection",
         "homepage": "",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "0874168639713f547c05947c76124f78441ea46c",
-        "sha256": "0gw5l5bj3zcgxhp7ki1jafy6sl5nk4vr43hal94lhi15kg2vfmfy",
+        "rev": "a45a8916243a7d27acc358f4fc18c4491f3eeca8",
+        "sha256": "1z4iyfgqsqs90g3xmh21n4ydv88p5s8s0klf1x1cbjx4r7q8h6wf",
         "type": "tarball",
-        "url": "https://github.com/nixos/nixpkgs/archive/0874168639713f547c05947c76124f78441ea46c.tar.gz",
+        "url": "https://github.com/nixos/nixpkgs/archive/a45a8916243a7d27acc358f4fc18c4491f3eeca8.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nur-combined": {
@@ -66,10 +66,10 @@
         "homepage": "https://github.com/nix-community/NUR",
         "owner": "nix-community",
         "repo": "nur-combined",
-        "rev": "3c1192e541180d06b2ea8410805d775b2a1d3c40",
-        "sha256": "0rm0hh0v6gsryz9wmm6k74hd6ib0dml3sx5ryr3x776dd9vwhb1p",
+        "rev": "2e67534e62090414c4ce5f38b39444a3380ce4a1",
+        "sha256": "0jirwjzkd093fyzc5p6wl4bjj0jzd1z1cw86yckxnx4c95bgwmfb",
         "type": "tarball",
-        "url": "https://github.com/nix-community/nur-combined/archive/3c1192e541180d06b2ea8410805d775b2a1d3c40.tar.gz",
+        "url": "https://github.com/nix-community/nur-combined/archive/2e67534e62090414c4ce5f38b39444a3380ce4a1.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "obelisk": {
