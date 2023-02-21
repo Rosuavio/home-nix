@@ -144,11 +144,6 @@ in
         if [[ -n "$IN_NIX_SHELL" ]]; then
           export PS1="\n\[\033[1;32m\][$IN_NIX_SHELL-shell:\w]\$\[\033[0m\] "
         fi
-
-        unset SSH_AGENT_PID
-        if [ "''${gnupg_SSH_AUTH_SOCK_by:-0}" -ne $$ ]; then
-          export SSH_AUTH_SOCK="$(gpgconf --list-dirs agent-ssh-socket)"
-        fi
       '';
     };
     bat.enable = true;
@@ -198,10 +193,5 @@ in
         email = "RosarioPulella@gmail.com";
       };
     };
-  };
-
-  pam.sessionVariables = {
-    SSH_AGENT_PID = "";
-    SSH_AUTH_SOCK = "\${XDG_RUNTIME_DIR}/gnupg/S.gpg-agent.ssh";
   };
 }
