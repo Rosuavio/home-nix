@@ -47,6 +47,15 @@ in
         # }
       ];
     };
+
+    safeeyes.enable = true;
+  };
+
+  # Add this to home-manager
+  # https://github.com/nix-community/home-manager/compare/master...Rosuavio:home-manager:master
+  systemd.user.services.safeeyes = {
+    Unit.After = [ "graphical-session-pre.target" ];
+    Service.Environment = "PATH=${lib.makeBinPath [ pkgs.alsa-utils ]}";
   };
 
   # This is supposed to enable dbus activation of mako. It does not work.
@@ -91,24 +100,5 @@ in
   #       ExecReload = "${pkgs.mako}/bin/makoctl reload";
   #     };
   #   };
-
-    safeeyes = {
-      Install.WantedBy = [ "graphical-session.target" ];
-      Unit = {
-        Description = "Safeeyes";
-        After = [ "graphical-session-pre.target" ];
-        PartOf = [ "graphical-session.target" ];
-        StartLimitIntervalSec = 350;
-        StartLimitBurst = 30;
-      };
-
-      Service = {
-        ExecStart = lib.getExe pkgs.safeeyes;
-        Restart = "on-failure";
-        RestartSec = 3;
-
-        Environment = "PATH=${lib.makeBinPath [ pkgs.alsa-utils ]}";
-      };
-    };
   };
 }
