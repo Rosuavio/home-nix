@@ -31,7 +31,7 @@ in
   home = {
     username = username;
     homeDirectory = "/home/" + username;
-    stateVersion = "22.05";
+    stateVersion = "22.11";
 
     sessionVariables = {
       EDITOR = editor;
