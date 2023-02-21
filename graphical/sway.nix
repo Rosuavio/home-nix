@@ -20,7 +20,7 @@ in
       base = true;
     };
 
-    # systemdIntegration = true;
+    systemdIntegration = true;
 
     config = {
       modifier = sModifier;
@@ -98,10 +98,6 @@ in
       };
     };
 
-    extraConfig = ''
-      exec "${pkgs.dbus}/bin/dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP; systemctl --user start sway-session.target
-    '';
-
     extraSessionCommands = ''
       export SDL_VIDEODRIVER=wayland
       # needs qt5.qtwayland in systemPackages
@@ -116,14 +112,5 @@ in
       export XDG_CURRENT_DESKTOP="sway"
       export XDG_SESSION_TYPE="wayland"
     '';
-  };
-  systemd.user.targets.sway-session = {
-    Unit = {
-      Description = "sway compositor session";
-      Documentation = [ "man:systemd.special(7)" ];
-      BindsTo = [ "graphical-session.target" ];
-      Wants = [ "graphical-session-pre.target" ];
-      After = [ "graphical-session-pre.target" ];
-    };
   };
 }
