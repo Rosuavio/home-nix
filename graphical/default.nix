@@ -22,9 +22,6 @@
     wl-clipboard
 
     dbeaver
-
-    spotify-tui
-    spotify-qt
   ];
 
   xdg.mimeApps.defaultApplications = {
