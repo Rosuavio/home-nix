@@ -48,7 +48,7 @@
         "url": "https://github.com/obsidiansystems/nix-thunk/archive/0982911d78fbd9932c3ed8104a930f313f49b69b.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
-    "nixpkgs": {
+    "nixos-22.11": {
         "branch": "nixos-22.11",
         "description": "Nix Packages collection",
         "homepage": "",
