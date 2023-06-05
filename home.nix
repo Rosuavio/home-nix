@@ -5,8 +5,6 @@ let
 
   sources = import ./nix/sources.nix;
 
-  obelisk = import sources.obelisk {};
-
   nix-thunk = import sources.nix-thunk {};
 
   emanote = (import sources.emanote).packages.x86_64-linux.default;
@@ -70,8 +68,6 @@ in
 
     killall
     xdg-utils
-
-    obelisk.command
 
     hack-font
 
