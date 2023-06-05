@@ -47,6 +47,18 @@
         "url": "https://github.com/nixos/nixpkgs/archive/7449971a3ecf857b4a554cf79b1d9dcc1a4647d8.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "nixpkgs-unstable": {
+        "branch": "nixpkgs-unstable",
+        "description": "Nix Packages collection & NixOS",
+        "homepage": "",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "31cd1b4afbaf0b1e81272ee9c31d1ab606503aed",
+        "sha256": "1hd48vkdrj8rgihrkjfhr3amqlf3phjshqyylslb836n6vlp18pp",
+        "type": "tarball",
+        "url": "https://github.com/nixos/nixpkgs/archive/31cd1b4afbaf0b1e81272ee9c31d1ab606503aed.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "nur-combined": {
         "branch": "master",
         "description": "A repository of NUR that combines all repositories [maintainer=@Mic92] ",
