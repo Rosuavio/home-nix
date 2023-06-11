@@ -23,25 +23,9 @@ in
 
      # Package set for building the home-manager cli and this wrapper
      pkgs ? import nixpkgs { },
-
-     # Path to home-manager moudles used by the home-manager cli
-     # Avaible options from home-manager are sourced from here.
-     home-manager ? home-manager-path,
-
-     # Path to the home-manager cli derivation
-     home-manager-script-path ? home-manager + "/home-manager",
-
-     # home-manager tool that gets wrapped
-     home-manager-script ? pkgs.callPackage home-manager-script-path
-      {
-        # Primary default path for home-manager repo for home-manager script to
-        # use. This can be used to adjust the version of the repo that is built
-        # by nix.
-        path = home-manager;
-      }
    }:
    pkgs.writeShellScriptBin "home-manager" ''
-     exec ${home-manager-script}/bin/home-manager \
+     exec $HOME/.nix-profile/bin/home-manager \
        -A "${home-attribute}" \
        -I nixpkgs=${nixpkgs} \
        --file ${home-config-path} \
