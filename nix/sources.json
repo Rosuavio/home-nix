@@ -11,18 +11,6 @@
         "url": "https://github.com/nix-community/home-manager/archive/f9edbedaf015013eb35f8caacbe0c9666bbc16af.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
-    "nix-thunk": {
-        "branch": "v0.5.0.0",
-        "description": null,
-        "homepage": null,
-        "owner": "obsidiansystems",
-        "repo": "nix-thunk",
-        "rev": "d32f4c1b91b24adc05a41d7dd8848a4f1dbd9c0a",
-        "sha256": "0zpx9pkgf77k11anhwb49l7734yn0ipl6fvsrva85g9bbjqa1fhz",
-        "type": "tarball",
-        "url": "https://github.com/obsidiansystems/nix-thunk/archive/d32f4c1b91b24adc05a41d7dd8848a4f1dbd9c0a.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
     "nixos-22.11": {
         "branch": "nixos-22.11",
         "description": "Nix Packages collection",

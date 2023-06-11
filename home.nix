@@ -3,14 +3,9 @@ let
   editor = "kak";
   username = "rosario";
 
-  sources = import ./nix/sources.nix;
-
-  nix-thunk = import sources.nix-thunk {};
-
   new-terminal = pkgs.writeShellScriptBin "new-terminal" "$TERM $@ &>/dev/null &";
 # $TERM sh -c "$EDITOR $@" &>/dev/null &
   new-shell = pkgs.writeShellScriptBin "new-shell" "$TERM sh -c $@";
-
 in
 {
   imports = [
@@ -91,7 +86,6 @@ in
 
     new-terminal
     new-shell
-    nix-thunk.command
 
     tree
     ripgrep
