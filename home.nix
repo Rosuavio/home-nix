@@ -22,6 +22,7 @@ in
   programs.home-manager.enable = true;
 
   home = {
+    enableNixpkgsReleaseCheck = true;
     username = username;
     homeDirectory = "/home/" + username;
     stateVersion = "22.11";
