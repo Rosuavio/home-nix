@@ -23,11 +23,14 @@ in
 
      # Package set for building the home-manager cli and this wrapper
      pkgs ? import nixpkgs { },
+
+     home-manager ? home-manager-path,
    }:
    pkgs.writeShellScriptBin "home-manager" ''
      exec $HOME/.nix-profile/bin/home-manager \
        -A "${home-attribute}" \
        -I nixpkgs=${nixpkgs} \
+       -I home-manager=${home-manager} \
        --file ${home-config-path} \
        "$@"
    '';
