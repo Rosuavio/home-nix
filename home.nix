@@ -25,7 +25,7 @@ in
     enableNixpkgsReleaseCheck = true;
     username = username;
     homeDirectory = "/home/" + username;
-    stateVersion = "22.11";
+    stateVersion = "23.05";
 
     sessionVariables = {
       EDITOR = editor;
