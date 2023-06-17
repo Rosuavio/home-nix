@@ -11,6 +11,8 @@ in
     pkgs.safeeyes
   ];
 
+  programs.wlogout.enable = true;
+
   services = {
     mako = {
       enable = true;
