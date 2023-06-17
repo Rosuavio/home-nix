@@ -25,9 +25,10 @@ in
      pkgs ? import nixpkgs { },
 
      home-manager ? home-manager-path,
+     home-manager-tool ? "$HOME/.nix-profile/bin/home-manager",
    }:
    pkgs.writeShellScriptBin "home-manager" ''
-     exec $HOME/.nix-profile/bin/home-manager \
+     exec ${home-manager-tool} \
        -A "${home-attribute}" \
        -I nixpkgs=${nixpkgs} \
        -I home-manager=${home-manager} \
