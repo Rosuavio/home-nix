@@ -11,14 +11,12 @@ in
     pkgs.safeeyes
   ];
 
-  programs = {
+  services = {
     mako = {
       enable = true;
       defaultTimeout = 1000 * 5;
     };
-  };
 
-  services = {
     wlsunset = {
       enable = true;
       latitude = "28.636591";
