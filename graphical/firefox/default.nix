@@ -23,14 +23,14 @@ in
         "extensions.update.enable" = false;
         "extensions.enabledScopes" = 15;
       };
-    };
 
-    # TODO: Map all attrs to a list.
-    extensions = [
-      addons.bitwarden
-      addons.noscript
-      addons.stylus
-    ];
+      # TODO: Map all attrs to a list.
+      extensions = [
+        addons.bitwarden
+        addons.noscript
+        addons.stylus
+      ];
+    };
   };
 
   xdg.mimeApps.defaultApplications = {
