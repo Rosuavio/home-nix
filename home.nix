@@ -138,6 +138,7 @@ in
     bat.enable = true;
     ssh = {
       enable = true;
+      package = pkgs.openssh;
     };
 
     direnv = {
