@@ -62,6 +62,8 @@ in
     nix
     niv
 
+    mosh
+
     killall
     xdg-utils
 
