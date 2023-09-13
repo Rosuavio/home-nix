@@ -6,8 +6,8 @@
     src = fetchFromGitHub {
       owner = "andreyorst";
       repo = "fzf.kak";
-      rev = "124c3a27510d6ef707250a2f31cb66a923f54ca6";
-      sha256 = "sha256:0rwmc5n20yyx37djaczsk684rrwpilkcy46waxxqlanlcnb61wsw";
+      rev = "6910bfb4c23cac59c17f5b7850f7bd49aba3e5cb";
+      sha256 = "sha256-KI4oWOw2VkYM22t/XwLPib2eHOlU9hd5JbH01IimisI=";
     };
     meta.homepage = "https:/github.com/andreyost/fzf.kak/";
   };
