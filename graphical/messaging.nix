@@ -7,7 +7,6 @@
     skypeforlinux
     discord
     signal-desktop
-    gitter
     slack
     element-desktop
   ];
