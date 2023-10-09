@@ -1,4 +1,4 @@
-{pkgs, ...}:
+{pkgs, config, ...}:
 {
   imports = [
     ./theming.nix
@@ -8,6 +8,10 @@
     ./vscode.nix
     ./messaging.nix
   ];
+
+  home.sessionVariables = {
+    USER_ENTRY = "${config.home.profileDirectory}/bin/sway";
+  };
 
   home.packages = with pkgs; [
     epiphany
