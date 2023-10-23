@@ -85,3 +85,7 @@ I need a manual way of triggering the switch and I need something that automatic
 
 # safeeyes
 Lock button does not work. I would like it to
+
+# Notifcation when any long running command ends
+I end up running a lot of long running commands. They tend to keep my focus or keep me from becoming totally focused on something else while they are running. If I had
+a notifcation sound or show when any command that runs for more than X secconds finishes then I can forget about any command after X secconds that I watch it run.
