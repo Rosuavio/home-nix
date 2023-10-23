@@ -14,6 +14,20 @@
         platforms = platforms.all;
         };
       };
+    "mailvelope" = buildFirefoxXpiAddon {
+      pname = "mailvelope";
+      version = "5.1.1";
+      addonId = "jid1-AQqSMBYb0a8ADg@jetpack";
+      url = "https://addons.mozilla.org/firefox/downloads/file/4180802/mailvelope-5.1.1.xpi";
+      sha256 = "5eb8320d46dda12e857747ba9e239878c5c71c5a05ec5f24063e4431bb4902d0";
+      meta = with lib;
+      {
+        homepage = "https://www.mailvelope.com/";
+        description = "Enhance your webmail provider with end-to-end encryption. Secure email communication based on the OpenPGP standard.";
+        license = licenses.gpl3;
+        platforms = platforms.all;
+        };
+      };
     "noscript" = buildFirefoxXpiAddon {
       pname = "noscript";
       version = "11.4.28";
