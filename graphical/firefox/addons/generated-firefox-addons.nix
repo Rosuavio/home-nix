@@ -2,10 +2,10 @@
   {
     "bitwarden" = buildFirefoxXpiAddon {
       pname = "bitwarden";
-      version = "2023.9.1";
+      version = "2023.9.2";
       addonId = "{446900e4-71c2-419f-a6a7-df9c091e268b}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/4170561/bitwarden_password_manager-2023.9.1.xpi";
-      sha256 = "46d4fe10ea3a1757a6a4c0d728f3f765d93883f742a3ebb73f36aeb80eec55a9";
+      url = "https://addons.mozilla.org/firefox/downloads/file/4180072/bitwarden_password_manager-2023.9.2.xpi";
+      sha256 = "e76cc68f7f194b52f615ec9df80f82308cd55e6234afff5fb41ee7de9f7a27f2";
       meta = with lib;
       {
         homepage = "https://bitwarden.com";
