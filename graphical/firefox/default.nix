@@ -31,6 +31,15 @@ in
         addons.stylus
       ];
     };
+    profiles.Work= {
+      # TODO: Map all attrs to a list.
+      extensions = [
+        addons.bitwarden
+        addons.noscript
+        addons.stylus
+        addons.mailvelope
+      ];
+    };
   };
 
   xdg.mimeApps.defaultApplications = {
