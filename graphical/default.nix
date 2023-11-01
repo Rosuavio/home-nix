@@ -1,4 +1,8 @@
 {pkgs, config, ...}:
+  let
+    sources = import ./../nix/sources.nix;
+    nixpkgs-unstable = import sources.nixpkgs-unstable {};
+  in
 {
   imports = [
     ./theming.nix
@@ -18,7 +22,6 @@
 
     okular
     spotify
-    bitwarden
     libreoffice
 
     grim slurp
@@ -26,6 +29,8 @@
     wl-clipboard
 
     dbeaver
+  ] ++ [
+    nixpkgs-unstable.bitwarden
   ];
 
   xdg.mimeApps.defaultApplications = {
