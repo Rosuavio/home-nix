@@ -7,10 +7,6 @@ let
   light = "${pkgs.light}/bin/light";
   sModifier = "Mod4";
   lockCmd = lib.getExe pkgs.swaylock;
-
-  nscpotInNewTerm = pkgs.writeShellScriptBin "ncspotInNewTerm" ''
-    $TERM sh -c "foot" &>/dev/null &
-  '';
 in
 {
   wayland.windowManager.sway = {
@@ -26,7 +22,6 @@ in
       modifier = sModifier;
       startup = [
         { command = "mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | ${pkgs.wob}/bin/wob"; }
-        # { command = "${nscpotInNewTerm}/bin/nscpotInNewTerm"; }
         { command = "element-desktop"; }
         { command = "signal-desktop"; }
       ];
