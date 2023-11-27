@@ -108,11 +108,6 @@ in
       hooks = [
         {
           name = "ModuleLoaded";
-          option = "wayland";
-          commands = "set-option global termcmd 'foot /bin/sh -c'";
-        }
-        {
-          name = "ModuleLoaded";
           option = "fzf-grep";
           commands = ''
             set global fzf_grep_command 'rg'
