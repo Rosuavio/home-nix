@@ -33,7 +33,7 @@ in
           { class = "discord"; }
         ];
       };
-      terminal = "${pkgs.foot}/bin/foot";
+      terminal = lib.getExe config.programs.foot.package;
 
       output = {
         "*" = {
@@ -84,7 +84,7 @@ in
           # If no pactl then fallback to alsa
           XF86AudioMicMute = "exec ${pactl} set-source-mute 1 toggle";
         };
-      menu = "rofi -show run";
+      menu = "${lib.getExe config.programs.rofi.finalPackage} -show run";
       # modifier = "";
 
       gaps = {
