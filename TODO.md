@@ -10,7 +10,7 @@ https://github.com/mawww/kakoune
 
 ## Firefox
 Got my extensions, had to enable them in ff though.
-Want to build my extensions from source, ?and have the sources update with niv like everything else?
+Want to build my extensions from source, ?and have the sources update with npins like everything else?
 I still want no script...
 
 Got an update tool to update the sources from moz, I am using those sources in nix and installing them on home-manager switch.

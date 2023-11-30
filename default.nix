@@ -1,4 +1,4 @@
-{ sources ? import ./nix/sources.nix
+{ sources ? import ./npins
 , nixpkgs ? sources."nixos-23.05"
 , home-manager ? sources.home-manager
 , ...

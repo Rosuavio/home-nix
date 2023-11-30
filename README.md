@@ -3,7 +3,7 @@ This repo only depends on nix, the shell.nix file pulls in everything else.
 To use any of the tools run `nix-shell` in the root of the dir. The nix-shell env pulls in a few tools.
 
 1. [home-manager](https://nix-community.github.io/home-manager/) for managing home dir configurations.
-2. [niv](https://github.com/nmattia/niv) for managing nix dependencies.
+2. [npins](https://github.com/andir/npins) for managing nix dependencies.
 3. [pkgs-firefox-addons](https://github.com/nix-community/nur-combined/blob/a6b479f122696aee99dadfe060745efa717259a9/repos/rycee/pkgs/firefox-addons-generator/default.nix) from the Nix User repository.
 
 > **TODO:** source pkgs-firefox-addons from https://gitlab.com/rycee/nixpkgs-firefox-addons
@@ -22,7 +22,7 @@ home-manager switch
 
 To update nix dependencies
 ```sh
-niv update
+npins update
 ```
 
 To update firefox addons

@@ -1,6 +1,6 @@
 let
 
-  sources = import ./nix/sources.nix;
+  sources = import ./npins;
   pkgs = import sources.nixpkgs-unstable {};
   nur = import sources.nur-combined { inherit pkgs; };
 
@@ -9,7 +9,7 @@ in pkgs.mkShell rec {
 
   packages = [
     pkgs.git
-    pkgs.niv
+    pkgs.npins
     nur.repos.ethancedwards8.firefox-addons-generator
   ];
 

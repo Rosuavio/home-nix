@@ -61,6 +61,7 @@ in
   home.packages = with pkgs; [
     nix
     niv
+    npins
 
     mosh
 
