@@ -7,16 +7,16 @@
         "owner": "nix-community",
         "repo": "home-manager"
       },
-      "branch": "release-23.05",
-      "revision": "28535c3a34d79071f2ccb68671971ce0c0984d7e",
-      "url": "https://github.com/nix-community/home-manager/archive/28535c3a34d79071f2ccb68671971ce0c0984d7e.tar.gz",
-      "hash": "1q7wnf4ffvzgxsn828gl6hgfqbpynk9b77grsqzfxpki86nfk4mz"
+      "branch": "release-23.11",
+      "revision": "aeb2232d7a32530d3448318790534d196bf9427a",
+      "url": "https://github.com/nix-community/home-manager/archive/aeb2232d7a32530d3448318790534d196bf9427a.tar.gz",
+      "hash": "16078fwcmqq41dqfnm124xxm8l6zykvqlj1kzgi0fvfil4y86slm"
     },
-    "nixos-23.05": {
+    "nixos-23.11": {
       "type": "Channel",
-      "name": "nixos-23.05",
-      "url": "https://releases.nixos.org/nixos/23.05/nixos-23.05.4981.5b528f99f73c/nixexprs.tar.xz",
-      "hash": "1psdfcl5rjid66dhc8c0dfdrgqk5x76drwcads149pa45vbnri8k"
+      "name": "nixos-23.11",
+      "url": "https://releases.nixos.org/nixos/23.11/nixos-23.11.928.50aa30a13c4a/nixexprs.tar.xz",
+      "hash": "0amb465xi9pwgsb51d252gs7vv40ilzfhpclih7kc70r6s89jfrc"
     },
     "nixpkgs-unstable": {
       "type": "Channel",
@@ -32,9 +32,9 @@
         "repo": "nur-combined"
       },
       "branch": "master",
-      "revision": "40f81e6eadacfc2e19e36f7dba3aabfdb5f7e8be",
-      "url": "https://github.com/nix-community/nur-combined/archive/40f81e6eadacfc2e19e36f7dba3aabfdb5f7e8be.tar.gz",
-      "hash": "0xjk63nwbb8zjzbb5fabq6gflz83nc1xg1b8ihh8wc734bjhfqz1"
+      "revision": "667432c78da9c2abf0cb100dfdaf7e812889da31",
+      "url": "https://github.com/nix-community/nur-combined/archive/667432c78da9c2abf0cb100dfdaf7e812889da31.tar.gz",
+      "hash": "1y5dvlvi1pi7m3p8icg2vhidvdpzq255mmhsndhvls4sf520z00a"
     }
   },
   "version": 3
