@@ -16,7 +16,10 @@ in
       base = true;
     };
 
-    systemdIntegration = true;
+    systemd = {
+      enable = true;
+      xdgAutostart = true;
+    };
 
     config = {
       modifier = sModifier;
