@@ -27,6 +27,8 @@ let
       };
     });
 
+  nix-lsp = pkgs.nil;
+
   tomlFormat = pkgs.formats.toml { };
   kak-lsp-config = tomlFormat.generate "kak-lsp-config.toml" {
     snippet_support = false;
@@ -39,7 +41,7 @@ let
       nix = {
         filetypes = [ "nix" ];
         roots = [ "flake.nix" "shell.nix" ".git" ];
-        command = "rnix-lsp";
+        command = lib.getExe nix-lsp;
       };
       rust = rec {
         filetypes = [ "rust" ];
@@ -171,7 +173,7 @@ in
   };
   home.packages = [
     (pkgs.hiPrio kakouneDesktop)
-    pkgs.rnix-lsp
+    nix-lsp
     pkgs.rustfmt
     pkgs.rust-analyzer
     pkgs.nodePackages.vscode-json-languageserver
