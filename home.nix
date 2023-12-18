@@ -68,8 +68,6 @@ in
     killall
     xdg-utils
 
-    hack-font
-
     hunspell
     hunspellDicts.en-us
 
