@@ -33,7 +33,12 @@
   };
 
   programs = {
-    foot.enable = true;
+    foot = {
+      enable = true;
+      settings = {
+        main.font = "monospace:size=12";
+      };
+    };
     rofi = {
       enable = true;
       package = pkgs.rofi-wayland;
