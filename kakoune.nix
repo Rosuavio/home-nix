@@ -1,7 +1,5 @@
 { pkgs, lib, ... }:
 let
-  custom-kak-pluigins = pkgs.callPackage ./kakounePlugins.nix { inherit lib; fetchFromGitHub = pkgs.fetchFromGitHub; kakouneUtils = pkgs.kakouneUtils; };
-
   edtiorInNewTerm = pkgs.writeShellScriptBin "edtiorInNewTerm" ''
     $TERM sh -c "$EDITOR $@" &>/dev/null &
   '';
@@ -167,7 +165,7 @@ in
       # Or config dir can be reconfigured with kak-lsp --configure <PATH>
       # It seems like there is some default config already. Maybe not actually.
       # pkgs.kakounePlugins.kak-lsp
-      custom-kak-pluigins.fzf-kak
+      pkgs.kakounePlugins.fzf-kak
     ];
 
   };
