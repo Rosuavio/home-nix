@@ -2,18 +2,18 @@
   {
     "bitwarden" = buildFirefoxXpiAddon {
       pname = "bitwarden";
-      version = "2023.12.0";
+      version = "2023.12.1";
       addonId = "{446900e4-71c2-419f-a6a7-df9c091e268b}";
-      url = "https://addons.mozilla.org/firefox/downloads/file/4205620/bitwarden_password_manager-2023.12.0.xpi";
-      sha256 = "f3e508d10c7bbd03890235354355c4bc526db24ebe241ce16630f272614258f4";
+      url = "https://addons.mozilla.org/firefox/downloads/file/4211087/bitwarden_password_manager-2023.12.1.xpi";
+      sha256 = "40f695fbe5153a7614f25289a9388f95c59a952fb039b8b9c33fd7bd99ea2da2";
       meta = with lib;
       {
         homepage = "https://bitwarden.com";
         description = "A secure and free password manager for all of your devices.";
         license = licenses.gpl3;
         platforms = platforms.all;
-        };
       };
+    };
     "mailvelope" = buildFirefoxXpiAddon {
       pname = "mailvelope";
       version = "5.1.1";
@@ -26,8 +26,8 @@
         description = "Enhance your webmail provider with end-to-end encryption. Secure email communication based on the OpenPGP standard.";
         license = licenses.gpl3;
         platforms = platforms.all;
-        };
       };
+    };
     "noscript" = buildFirefoxXpiAddon {
       pname = "noscript";
       version = "11.4.29";
@@ -40,8 +40,8 @@
         description = "The best security you can get in a web browser! Allow potentially malicious web content to run only from sites you trust. Protect yourself against XSS other web security exploits.";
         license = licenses.gpl2;
         platforms = platforms.all;
-        };
       };
+    };
     "stylus" = buildFirefoxXpiAddon {
       pname = "stylus";
       version = "1.5.41";
@@ -54,6 +54,6 @@
         description = "Redesign your favorite websites with Stylus, an actively developed and community driven userstyles manager. Easily install custom themes from popular online repositories, or create, edit, and manage your own personalized CSS stylesheets.";
         license = licenses.gpl3;
         platforms = platforms.all;
-        };
       };
-    }
+    };
+  }
