@@ -96,8 +96,22 @@ in
       };
     };
 
+    extraOptions = [
+      "--unsupported-gpu"
+    ];
+
     extraSessionCommands = ''
       export SDL_VIDEODRIVER=wayland
+
+      # NVIDIA stuff
+      # export WLR_NO_HARDWARE_CURSOR=1
+      # export WLR_RENDERER=vulkan
+
+      # OpenGL variable
+      # export GBM_BACKEND=nvidia-drm
+      # export __GL_GSYNC_ALLOWED=0
+      # export __GL_VRR_ALLOWED=0
+      # export __GLX_VENDOR_LIBRARY_NAME=nvidia
 
       # Xwayland compatibility
       export XWAYLAND_NO_GLAMOR=1
@@ -112,6 +126,10 @@ in
       export _JAVA_AWT_WM_NONREPARENTING=1
 
       export CLUTTER_BACKEND=wayland
+      # Firefox
+      export MOZ_ENABLE_WAYLAND=1
+      export MOZ_USE_XINPUT2=1
+
     '';
   };
 }
