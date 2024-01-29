@@ -27,6 +27,7 @@ in
         { command = "mkfifo $SWAYSOCK.wob && tail -f $SWAYSOCK.wob | ${pkgs.wob}/bin/wob"; }
         { command = "element-desktop"; }
         { command = "signal-desktop"; }
+        { command = "simplex-chat-desktop"; }
       ];
       assigns = {
         "9: other" = [
@@ -34,6 +35,7 @@ in
           { class = "Element"; }
           { class = "Signal"; }
           { class = "discord"; }
+          { class = "chat-simplex-desktop-MainKt"; }
         ];
       };
       terminal = lib.getExe config.programs.foot.package;

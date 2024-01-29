@@ -6,6 +6,9 @@ let
   new-terminal = pkgs.writeShellScriptBin "new-terminal" "$TERM $@ &>/dev/null &";
 # $TERM sh -c "$EDITOR $@" &>/dev/null &
   new-shell = pkgs.writeShellScriptBin "new-shell" "$TERM sh -c $@";
+  sources = import ./npins;
+  nixpkgs-unstable = sources."nixpkgs-unstable";
+  pkgs-unstable = import nixpkgs-unstable {};
 in
 {
   imports = [
@@ -95,6 +98,8 @@ in
     dbeaver
     socat
     file
+  ] ++ [
+    pkgs-unstable.simplex-chat-desktop
   ];
 
   xdg.configFile."wireplumber/bluetooth.lua.d/50-bluze-config.lua" = {
