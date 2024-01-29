@@ -8,21 +8,21 @@
         "repo": "home-manager"
       },
       "branch": "release-23.11",
-      "revision": "7e398b3d76bc1503171b1364c9d4a07ac06f3851",
-      "url": "https://github.com/nix-community/home-manager/archive/7e398b3d76bc1503171b1364c9d4a07ac06f3851.tar.gz",
-      "hash": "1a2b1y8w7wm6shiawqic88j6sp6z43hq3p3852dgz6jbvj8lq5a1"
+      "revision": "10cd9c53115061aa6a0a90aad0b0dde6a999cdb9",
+      "url": "https://github.com/nix-community/home-manager/archive/10cd9c53115061aa6a0a90aad0b0dde6a999cdb9.tar.gz",
+      "hash": "0x7lvvzi0lv7yvp97s0lkdiapxxpwqz8a86w2lk0dm14y1az23aq"
     },
     "nixos-23.11": {
       "type": "Channel",
       "name": "nixos-23.11",
-      "url": "https://releases.nixos.org/nixos/23.11/nixos-23.11.2561.b0b2c5445c64/nixexprs.tar.xz",
-      "hash": "1vf7w6sv6ypy9xbwjk8iv23a6lydf4hvf7iz3ddccdnjm6dvdb6m"
+      "url": "https://releases.nixos.org/nixos/23.11/nixos-23.11.3640.56911ef3403a/nixexprs.tar.xz",
+      "hash": "19n22jqhsw16kqa5hq1wd9c723zl3qsmr2960wghhcqy166pminl"
     },
     "nixpkgs-unstable": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.05pre565199.63143ac2c918/nixexprs.tar.xz",
-      "hash": "04k3q5224dnyn82yacbq9q9gnsrn6ig043mpzpsky885ikg7i2zw"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.05pre577508.902d74314fae/nixexprs.tar.xz",
+      "hash": "07r8gqbsg5y4r2sbai6xz28gf5yff3xn2v9py9is4p3fn1crgr5h"
     },
     "nur-combined": {
       "type": "Git",
@@ -32,9 +32,9 @@
         "repo": "nur-combined"
       },
       "branch": "master",
-      "revision": "25615a93293a4a8d7c272f2cd01d016c5f766dfa",
-      "url": "https://github.com/nix-community/nur-combined/archive/25615a93293a4a8d7c272f2cd01d016c5f766dfa.tar.gz",
-      "hash": "1ak91b8bb3mpw3sf43m4shxg01siy70ai433m1fx1ayxv5hq9lcm"
+      "revision": "31f9b314acdef0a3a141cc47cd3ae4ccd17f957a",
+      "url": "https://github.com/nix-community/nur-combined/archive/31f9b314acdef0a3a141cc47cd3ae4ccd17f957a.tar.gz",
+      "hash": "0y3kkdj78xrpnp4vimrri85bk6grh2zz4nfjvrp5qkc4p3i3drrz"
     }
   },
   "version": 3
