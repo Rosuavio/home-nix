@@ -26,6 +26,8 @@
 
     dbeaver
     bitwarden
+
+    rofi-rbw-wayland
   ];
 
   xdg.mimeApps.defaultApplications = {
