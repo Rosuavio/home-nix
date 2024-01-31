@@ -184,9 +184,10 @@ in
     # bitw provides a D-Bus service org.freedesktop.secrets which I really want!
     # I need to see if I can make the two projects aware of eachother and spur them together.
     rbw = {
+      package = pkgs-unstable.rbw;
       enable = true;
       settings = {
-        email = "RosarioPulella@gmail.com";
+        email = "rosariopulella@gmail.com";
       };
     };
   };
