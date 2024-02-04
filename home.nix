@@ -6,9 +6,6 @@ let
   new-terminal = pkgs.writeShellScriptBin "new-terminal" "$TERM $@ &>/dev/null &";
 # $TERM sh -c "$EDITOR $@" &>/dev/null &
   new-shell = pkgs.writeShellScriptBin "new-shell" "$TERM sh -c $@";
-  sources = import ./npins;
-  nixpkgs-unstable = sources."nixpkgs-unstable";
-  pkgs-unstable = import nixpkgs-unstable {};
 in
 {
   imports = [
@@ -98,8 +95,8 @@ in
     dbeaver
     socat
     file
-  ] ++ [
-    pkgs-unstable.simplex-chat-desktop
+
+    simplex-chat-desktop
   ];
 
   xdg.configFile."wireplumber/bluetooth.lua.d/50-bluze-config.lua" = {
@@ -184,7 +181,6 @@ in
     # bitw provides a D-Bus service org.freedesktop.secrets which I really want!
     # I need to see if I can make the two projects aware of eachother and spur them together.
     rbw = {
-      package = pkgs-unstable.rbw;
       enable = true;
       settings = {
         email = "rosariopulella@gmail.com";
