@@ -3,7 +3,6 @@
   home.packages = with pkgs; [
     pulsemixer
     playerctl
-    spotify-tui
   ];
 
   services = {

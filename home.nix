@@ -108,10 +108,6 @@ in
     '';
   };
 
-  services = {
-    keybase.enable = true;
-  };
-
   programs = {
     bash = {
       enable = true;
