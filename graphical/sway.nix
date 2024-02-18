@@ -34,7 +34,7 @@ in
           { class = "Slack"; }
           { class = "Element"; }
           { class = "Signal"; }
-          { class = "discord"; }
+          { class = "WebCord"; }
           { class = "chat-simplex-desktop-MainKt"; }
         ];
       };
