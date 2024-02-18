@@ -15,14 +15,25 @@
     "nixos-23.11": {
       "type": "Channel",
       "name": "nixos-23.11",
-      "url": "https://releases.nixos.org/nixos/23.11/nixos-23.11.3920.25e3d4c0d359/nixexprs.tar.xz",
-      "hash": "1wx3qxnz0pm3ld7k6gfvlxs7cv8dvj26917c3136ihvg7znfj1i8"
+      "url": "https://releases.nixos.org/nixos/23.11/nixos-23.11.4463.84d981bae8b5/nixexprs.tar.xz",
+      "hash": "1wkkziv990ry8lypsrldk00hxq1lzbfqyyfc5a5ixm4k1i8xha0h"
+    },
+    "nixpkgs-local": {
+      "type": "Git",
+      "repository": {
+        "type": "Git",
+        "url": "file:///home/rosario/Documents/nixpkgs/"
+      },
+      "branch": "kak-update",
+      "revision": "53365eed1e01f412fc2253d9ba63f2453675620e",
+      "url": null,
+      "hash": "1ggf17klyqjrnmdg76pn3s5rp26snrdnmjr0i1l66311fmjvdh7n"
     },
     "nixpkgs-unstable": {
       "type": "Channel",
       "name": "nixpkgs-unstable",
-      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.05pre579369.79a13f1437e1/nixexprs.tar.xz",
-      "hash": "1hhcjbxk39ybigjxm4am8p32nsffj87qxcsnkrr4z3smwb4pv5as"
+      "url": "https://releases.nixos.org/nixpkgs/nixpkgs-24.05pre585543.045b51a3ae66/nixexprs.tar.xz",
+      "hash": "1hn5fif0nk40fx48qa9my6kb1p2nc0xs1izpgzll93rfs5826qyz"
     },
     "nur-combined": {
       "type": "Git",
@@ -32,9 +43,9 @@
         "repo": "nur-combined"
       },
       "branch": "master",
-      "revision": "2c2874c2c895cb6541489969ce7eb1095750123f",
-      "url": "https://github.com/nix-community/nur-combined/archive/2c2874c2c895cb6541489969ce7eb1095750123f.tar.gz",
-      "hash": "0fpv1jqqbfban6996hsc8qsnp4axbc946n6az229iyjmj0mpqkwj"
+      "revision": "8073748344bb49c0a06e1260365d6e53a5222a40",
+      "url": "https://github.com/nix-community/nur-combined/archive/8073748344bb49c0a06e1260365d6e53a5222a40.tar.gz",
+      "hash": "0x0gd4b61j2mkx59hxx5nq3hw5zcpqwrkjdgm8kvhpfrgjdlzvz4"
     }
   },
   "version": 3
