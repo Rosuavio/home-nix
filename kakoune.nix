@@ -133,8 +133,6 @@ in
           option = "filetype=rust";
           commands = ''
             set-option window indentwidth 4
-            # Enable LSP
-            lsp-enable-window
 
             # Auto-formatting on save
             # TODO: Expand home-manager to allow hooks inside commands of hooks to be defined in nix.
@@ -157,6 +155,8 @@ in
       set global ctagscmd '${pkgs.haskellPackages.hasktags}/bin/hasktags -cR'
 
       eval %sh{${pkgs.kakounePlugins.kak-lsp}/bin/kak-lsp --kakoune -s $kak_session --config ${kak-lsp-config}}
+      lsp-inlay-hints-enable global
+      lsp-auto-hover-enable
     '';
 
     # Adding something to this list only combines the derivations with kak using symlink join.
