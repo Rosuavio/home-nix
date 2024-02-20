@@ -7,6 +7,7 @@ human scaling.
 ## Kakoune
 https://github.com/mawww/kakoune
 
+- Move off of kak.fzf
 
 ## Firefox
 Got my extensions, had to enable them in ff though.

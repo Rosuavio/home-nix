@@ -164,6 +164,8 @@ in
       eval %sh{${pkgs.kakounePlugins.kak-lsp}/bin/kak-lsp --kakoune -s $kak_session --config ${kak-lsp-config}}
       lsp-inlay-hints-enable global
       lsp-auto-hover-enable
+      # Want this or something like it
+      # lsp-inlay-diagnostics-enable global
     '';
 
     # Adding something to this list only combines the derivations with kak using symlink join.
