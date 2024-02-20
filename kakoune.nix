@@ -1,5 +1,6 @@
 { pkgs, lib, ... }:
 let
+  ghcVersion = "94";
   edtiorInNewTerm = pkgs.writeShellScriptBin "edtiorInNewTerm" ''
     $TERM sh -c "$EDITOR $@" &>/dev/null &
   '';
@@ -66,6 +67,12 @@ let
         command = "taplo-lsp";
         args = [ "run" ];
       };
+      haskell = {
+        filetypes = [ "haskell" ];
+        roots = [ "Setup.hs" "stack.yaml" "*.cabal" "cabal.project" "hie.yaml" ];
+        command = "haskell-language-server";
+        args = [ "--lsp" ];
+      };
     };
   };
 in
@@ -124,7 +131,7 @@ in
         {
           name = "WinSetOption";
           # Maybe can split out the list of filetypes to use lsp for to a nix list.
-          option = "filetype=(nix|typescript|toml|json)";
+          option = "filetype=(haskell|nix|typescript|toml|json)";
           commands = "lsp-enable-window";
         }
         {
@@ -177,5 +184,8 @@ in
     pkgs.nodePackages.vscode-json-languageserver
     pkgs.nodePackages.typescript-language-server
     pkgs.taplo-lsp
+    pkgs.haskell.packages."ghc${ghcVersion}".haskell-language-server
+    (pkgs.haskell.lib.compose.justStaticExecutables pkgs.haskell.packages."ghc${ghcVersion}".cabal-install)
+    pkgs.haskell.compiler."ghc${ghcVersion}"
   ];
 }
