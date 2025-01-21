@@ -1,4 +1,7 @@
 # My home-manager conf
+
+> Repository moved to https://git.sr.ht/~rosuavio/home-config
+
 This repo only depends on nix, the shell.nix file pulls in everything else.
 To use any of the tools run `nix-shell` in the root of the dir. The nix-shell env pulls in a few tools.
 
